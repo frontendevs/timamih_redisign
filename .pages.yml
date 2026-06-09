@@ -1,0 +1,278 @@
+media:
+  input: public/assets/images
+  output: /assets/images
+
+content:
+  # ── Site settings ────────────────────────────────────────────────────────────
+  - name: site-en
+    label: "EN · Site"
+    type: file
+    path: content/en/site.json
+    fields:
+      - { name: siteName, label: Site name, type: string }
+      - { name: titleSuffix, label: Title suffix, type: string }
+      - name: seo
+        label: SEO
+        type: object
+        fields:
+          - { name: title, label: Page title, type: string }
+          - { name: description, label: Meta description, type: string }
+
+  - name: site-ru
+    label: "RU · Site"
+    type: file
+    path: content/ru/site.json
+    fields:
+      - { name: siteName, label: Site name, type: string }
+      - { name: titleSuffix, label: Title suffix, type: string }
+      - name: seo
+        label: SEO
+        type: object
+        fields:
+          - { name: title, label: Page title, type: string }
+          - { name: description, label: Meta description, type: string }
+
+  - name: site-fi
+    label: "FI · Site"
+    type: file
+    path: content/fi/site.json
+    fields:
+      - { name: siteName, label: Site name, type: string }
+      - { name: titleSuffix, label: Title suffix, type: string }
+      - name: seo
+        label: SEO
+        type: object
+        fields:
+          - { name: title, label: Page title, type: string }
+          - { name: description, label: Meta description, type: string }
+
+  # ── Hero ─────────────────────────────────────────────────────────────────────
+  - name: hero-en
+    label: "EN · Hero"
+    type: file
+    path: content/en/hero.json
+    fields:
+      - { name: label, label: Label, type: string }
+      - { name: title, label: Title (comma-separated lines), type: string }
+      - { name: description, label: Description, type: string }
+      - { name: playButton, label: Play button label, type: string }
+      - { name: mainVideoUrl, label: YouTube embed URL, type: string }
+      - name: chat
+        label: Chat messages
+        type: list
+        fields:
+          - { name: id, label: ID, type: string }
+          - { name: message, label: Message, type: string }
+
+  - name: hero-ru
+    label: "RU · Hero"
+    type: file
+    path: content/ru/hero.json
+    fields:
+      - { name: label, label: Label, type: string }
+      - { name: title, label: Title (comma-separated lines), type: string }
+      - { name: description, label: Description, type: string }
+      - { name: playButton, label: Play button label, type: string }
+      - { name: mainVideoUrl, label: YouTube embed URL, type: string }
+      - name: chat
+        label: Chat messages
+        type: list
+        fields:
+          - { name: id, label: ID, type: string }
+          - { name: message, label: Message, type: string }
+
+  - name: hero-fi
+    label: "FI · Hero"
+    type: file
+    path: content/fi/hero.json
+    fields:
+      - { name: label, label: Label, type: string }
+      - { name: title, label: Title (comma-separated lines), type: string }
+      - { name: description, label: Description, type: string }
+      - { name: playButton, label: Play button label, type: string }
+      - { name: mainVideoUrl, label: YouTube embed URL, type: string }
+      - name: chat
+        label: Chat messages
+        type: list
+        fields:
+          - { name: id, label: ID, type: string }
+          - { name: message, label: Message, type: string }
+
+  # ── How We Work ──────────────────────────────────────────────────────────────
+  - name: how-we-work-en
+    label: "EN · How We Work"
+    type: file
+    path: content/en/how-we-work.json
+    fields:
+      - { name: title, label: Section title, type: string }
+      - name: steps
+        label: Steps
+        type: list
+        fields:
+          - { name: id, label: ID, type: string }
+          - { name: title, label: Step title, type: string }
+          - { name: description, label: Description, type: text }
+
+  - name: how-we-work-ru
+    label: "RU · How We Work"
+    type: file
+    path: content/ru/how-we-work.json
+    fields:
+      - { name: title, label: Section title, type: string }
+      - name: steps
+        label: Steps
+        type: list
+        fields:
+          - { name: id, label: ID, type: string }
+          - { name: title, label: Step title, type: string }
+          - { name: description, label: Description, type: text }
+
+  - name: how-we-work-fi
+    label: "FI · How We Work"
+    type: file
+    path: content/fi/how-we-work.json
+    fields:
+      - { name: title, label: Section title, type: string }
+      - name: steps
+        label: Steps
+        type: list
+        fields:
+          - { name: id, label: ID, type: string }
+          - { name: title, label: Step title, type: string }
+          - { name: description, label: Description, type: text }
+
+  # ── What We Offer ────────────────────────────────────────────────────────────
+  - name: what-we-offer-en
+    label: "EN · What We Offer"
+    type: file
+    path: content/en/what-we-offer.json
+    fields:
+      - { name: title, label: Section title, type: string }
+      - name: services
+        label: Services
+        type: list
+        fields:
+          - { name: id, label: ID, type: string }
+          - { name: slug, label: Slug, type: string }
+          - { name: title, label: Title, type: string }
+          - { name: description, label: Description, type: text }
+          - { name: price, label: Price (number), type: string }
+          - { name: illustration, label: Illustration slug, type: string }
+
+  - name: what-we-offer-ru
+    label: "RU · What We Offer"
+    type: file
+    path: content/ru/what-we-offer.json
+    fields:
+      - { name: title, label: Section title, type: string }
+      - name: services
+        label: Services
+        type: list
+        fields:
+          - { name: id, label: ID, type: string }
+          - { name: slug, label: Slug, type: string }
+          - { name: title, label: Title, type: string }
+          - { name: description, label: Description, type: text }
+          - { name: price, label: Price (number), type: string }
+          - { name: illustration, label: Illustration slug, type: string }
+
+  - name: what-we-offer-fi
+    label: "FI · What We Offer"
+    type: file
+    path: content/fi/what-we-offer.json
+    fields:
+      - { name: title, label: Section title, type: string }
+      - name: services
+        label: Services
+        type: list
+        fields:
+          - { name: id, label: ID, type: string }
+          - { name: slug, label: Slug, type: string }
+          - { name: title, label: Title, type: string }
+          - { name: description, label: Description, type: text }
+          - { name: price, label: Price (number), type: string }
+          - { name: illustration, label: Illustration slug, type: string }
+
+  # ── Our Little Story ─────────────────────────────────────────────────────────
+  - name: our-little-story-en
+    label: "EN · Our Story"
+    type: file
+    path: content/en/our-little-story.json
+    fields:
+      - { name: title, label: Section title, type: string }
+      - { name: description, label: Story (double newline = paragraph break), type: rich-text }
+
+  - name: our-little-story-ru
+    label: "RU · Our Story"
+    type: file
+    path: content/ru/our-little-story.json
+    fields:
+      - { name: title, label: Section title, type: string }
+      - { name: description, label: Story (double newline = paragraph break), type: rich-text }
+
+  - name: our-little-story-fi
+    label: "FI · Our Story"
+    type: file
+    path: content/fi/our-little-story.json
+    fields:
+      - { name: title, label: Section title, type: string }
+      - { name: description, label: Story (double newline = paragraph break), type: rich-text }
+
+  # ── Get In Touch ─────────────────────────────────────────────────────────────
+  - name: get-in-touch-en
+    label: "EN · Get In Touch"
+    type: file
+    path: content/en/get-in-touch.json
+    fields:
+      - { name: title, label: Section title, type: string }
+      - { name: description, label: Description, type: string }
+      - { name: copyText, label: Copy section label, type: string }
+      - name: contacts
+        label: Contacts
+        type: list
+        fields:
+          - { name: id, label: ID, type: string }
+          - { name: icon, label: "Icon (telephone/telegram/whatsapp/email/instagram)", type: string }
+          - { name: url, label: "Value (number or handle)", type: string }
+
+  - name: get-in-touch-ru
+    label: "RU · Get In Touch"
+    type: file
+    path: content/ru/get-in-touch.json
+    fields:
+      - { name: title, label: Section title, type: string }
+      - { name: description, label: Description, type: string }
+      - { name: copyText, label: Copy section label, type: string }
+      - name: contacts
+        label: Contacts
+        type: list
+        fields:
+          - { name: id, label: ID, type: string }
+          - { name: icon, label: "Icon (telephone/telegram/whatsapp/email/instagram)", type: string }
+          - { name: url, label: "Value (number or handle)", type: string }
+
+  - name: get-in-touch-fi
+    label: "FI · Get In Touch"
+    type: file
+    path: content/fi/get-in-touch.json
+    fields:
+      - { name: title, label: Section title, type: string }
+      - { name: description, label: Description, type: string }
+      - { name: copyText, label: Copy section label, type: string }
+      - name: contacts
+        label: Contacts
+        type: list
+        fields:
+          - { name: id, label: ID, type: string }
+          - { name: icon, label: "Icon (telephone/telegram/whatsapp/email/instagram)", type: string }
+          - { name: url, label: "Value (number or handle)", type: string }
+
+  # ── Team ─────────────────────────────────────────────────────────────────────
+  - name: team
+    label: "Team"
+    type: file
+    path: content/team.json
+    fields:
+      - name: ""
+        label: Team members
+        type: object

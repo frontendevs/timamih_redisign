@@ -8,7 +8,7 @@
  * Island: video-modal (lazy) via play button.
  */
 
-import { esc } from "../html.ts";
+import { esc, icon } from "../html.ts";
 import type { PageContent } from "../schema.ts";
 
 /** Original star — 4-point, viewBox 65×65. tone: accent | secondary. */

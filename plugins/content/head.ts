@@ -59,6 +59,7 @@ export function renderHead(content: PageContent): string {
     <!-- SEO -->
     <title>${title}</title>
     <meta name="description" content="${description}" />
+    <meta name="robots" content="index, follow" />
     <link rel="canonical" href="${attr(canonical)}" />
 
     <!-- hreflang -->
@@ -71,8 +72,16 @@ export function renderHead(content: PageContent): string {
     <meta property="og:description" content="${description}" />
     <meta property="og:locale" content="${attr(ogLocale)}" />
     <meta property="og:site_name" content="${esc(site.siteName)}" />
-    <!-- TODO: add OG image once /assets/images/og/og-16x9.webp is created -->
-    <!-- <meta property="og:image" content="${attr(`${BASE_URL}${OG_IMAGE}`)}" /> -->
+    <meta property="og:image" content="${attr(`${BASE_URL}${OG_IMAGE}`)}" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="${title}" />
+
+    <!-- Twitter / X Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="${title}" />
+    <meta name="twitter:description" content="${description}" />
+    <meta name="twitter:image" content="${attr(`${BASE_URL}${OG_IMAGE}`)}" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
