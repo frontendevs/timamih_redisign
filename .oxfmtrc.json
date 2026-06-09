@@ -1,0 +1,26 @@
+{
+	"printWidth": 120,
+	"tabWidth": 2,
+	"useTabs": true,
+	"semi": true,
+	"singleQuote": false,
+	"trailingComma": "all",
+	"bracketSpacing": true,
+	"endOfLine": "lf",
+	"insertFinalNewline": true,
+	"htmlWhitespaceSensitivity": "css",
+	"embeddedLanguageFormatting": "auto",
+	"sortImports": true,
+	"ignorePatterns": ["node_modules", "dist", "coverage", "vendor", "public", "storage", "**/*.min.js", "**/*.min.css"],
+	"overrides": [
+		{
+			"files": ["**/*.html"],
+			"options": {
+				"printWidth": 180,
+				"singleAttributePerLine": false,
+				"bracketSameLine": true,
+				"htmlWhitespaceSensitivity": "ignore"
+			}
+		}
+	]
+}

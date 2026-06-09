@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="display: none;">
+  <!-- Lucide: database (server cylinder) — storage equalization nodes, bento, mega-menu -->
+  <symbol id="database" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="12" cy="5" rx="9" ry="3" />
+    <path d="M3 5V19A9 3 0 0 0 21 19V5" />
+    <path d="M3 12A9 3 0 0 0 21 12" />
+  </symbol>
+
+  <symbol id="server" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <rect width="20" height="8" x="2" y="2" rx="2" ry="2"/>
+    <rect width="20" height="8" x="2" y="14" rx="2" ry="2"/>
+    <line x1="6" x2="6.01" y1="6" y2="6"/>
+    <line x1="6" x2="6.01" y1="18" y2="18"/>
+  </symbol>
+
+  <!-- Lucide: shield-check — dashboard compliance card, solutions radar center -->
+  <symbol id="shield-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+    <path d="M9 12l2 2 4-4" />
+  </symbol>
+
+  <!-- Lucide: message-square — bento context-aware analysis -->
+  <symbol id="message-square" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+  </symbol>
+
+  <!-- Lucide: trending-up — Investors icon -->
+  <symbol id="trending-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
+    <polyline points="17 6 23 6 23 12" />
+  </symbol>
+
+  <!-- Lucide: users — Customers icon, mega-menu -->
+  <symbol id="users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+    <circle cx="9" cy="7" r="4" />
+    <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+  </symbol>
+
+  <!-- Lucide: chart-line — mega-menu product feature -->
+  <symbol id="chart-line" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M3 3v16a2 2 0 0 0 2 2h16"/>
+    <path d="m19 9-5 5-4-4-3 3"/>
+  </symbol>
+
+  <!-- Lucide: chart-column — mega-menu product feature -->
+  <symbol id="chart-column" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M3 3v16a2 2 0 0 0 2 2h16"/>
+    <path d="M18 17V9"/>
+    <path d="M13 17V5"/>
+    <path d="M8 17v-3"/>
+  </symbol>
+
+  <!-- Lucide: layers (flat stacked) — mega-menu Storage Intelligence -->
+  <symbol id="layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"/>
+    <path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"/>
+    <path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"/>
+  </symbol>
+
+  <!-- Lucide: handshake — mega-menu Partners -->
+  <symbol id="handshake" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m11 17 2 2a1 1 0 1 0 3-3"/>
+    <path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/>
+    <path d="m21 3 1 11h-2"/>
+    <path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"/>
+    <path d="M3 4h8"/>
+  </symbol>
+
+  <!-- Custom AI brain / platform icon — hero badge, storage equalization controller -->
+  <symbol id="ai-brain" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 18V5" />
+    <path d="M15 13a4.17 4.17 0 0 1-3-4 4.17 4.17 0 0 1-3 4" />
+    <path d="M17.598 6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5" />
+    <path d="M17.997 5.125a4 4 0 0 1 2.526 5.77" />
+    <path d="M18 18a4 4 0 0 0 2-7.464" />
+    <path d="M19.967 17.483A4 4 0 1 1 12 18a4 4 0 1 1-7.967-.517" />
+    <path d="M6 18a4 4 0 0 1-2-7.464" />
+    <path d="M6.003 5.125a4 4 0 0 0-2.526 5.77" />
+  </symbol>
+
+  <!-- Lucide: cpu — NPU/AI chip in MSP animation -->
+  <symbol id="cpu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 20v2" />
+    <path d="M12 2v2" />
+    <path d="M17 20v2" />
+    <path d="M17 2v2" />
+    <path d="M2 12h2" />
+    <path d="M2 17h2" />
+    <path d="M2 7h2" />
+    <path d="M20 12h2" />
+    <path d="M20 17h2" />
+    <path d="M20 7h2" />
+    <path d="M7 20v2" />
+    <path d="M7 2v2" />
+    <rect x="4" y="4" width="16" height="16" rx="2" />
+    <rect x="8" y="8" width="8" height="8" rx="1" />
+  </symbol>
+
+  <!-- Lucide: brain-circuit — AI classification feature -->
+  <symbol id="brain-circuit" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/>
+    <path d="M9 13a4.5 4.5 0 0 0 3-4"/>
+    <path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"/>
+    <path d="M3.477 10.896a4 4 0 0 1 .585-.396"/>
+    <path d="M6 18a4 4 0 0 1-1.967-.516"/>
+    <path d="M12 13h4"/>
+    <path d="M12 18h6a2 2 0 0 1 2 2v1"/>
+    <path d="M12 8h8"/>
+    <path d="M16 8V5a2 2 0 0 1 2-2"/>
+    <circle cx="16" cy="13" r=".5"/>
+    <circle cx="18" cy="3" r=".5"/>
+    <circle cx="20" cy="21" r=".5"/>
+    <circle cx="20" cy="8" r=".5"/>
+  </symbol>
+
+  <!-- Lucide: lightbulb — innovation feature -->
+  <symbol id="lightbulb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/>
+    <path d="M9 18h6"/>
+    <path d="M10 22h4"/>
+  </symbol>
+
+</svg>

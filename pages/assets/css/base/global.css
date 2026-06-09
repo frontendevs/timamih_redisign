@@ -1,0 +1,57 @@
+/* Fonts: self-hosted @font-face → base/fonts.css · preload critical faces → <link> in <head>. No external CDN. Never here. */
+
+/* ── HTML ───────────────────────────────────────────────────── */
+html {
+	inline-size: 100%;
+	overflow-x: clip;
+	scroll-behavior: smooth;
+	scrollbar-gutter: stable;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+
+/* ── Body ───────────────────────────────────────────────────── */
+body {
+	min-block-size: 100svh;
+	overflow-x: clip;
+	font-family: var(--font-body);
+	font-size: var(--font-body-size, var(--font-16));
+	font-weight: var(--font-body-weight, 400);
+	line-height: var(--font-body-lh, 1.5);
+	letter-spacing: var(--font-body-ls, normal);
+	color: var(--text);
+	background-color: var(--bg);
+	accent-color: var(--accent);
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Focus ──────────────────────────────────────────────────── */
+:is(button, a, input, select, textarea, summary, [tabindex]):focus-visible {
+	outline: 1.5px solid var(--color-focus);
+	outline-offset: 2px;
+}
+
+label:has(input:focus-visible) {
+	outline: 1.5px solid var(--color-focus);
+	outline-offset: 2px;
+}
+
+/* ── Hidden ─────────────────────────────────────────────────── */
+:is([id], [class])[hidden] {
+	display: none;
+}
+
+.is-hidden {
+	display: none;
+}
+
+/* ── SVG icons ──────────────────────────────────────────────── */
+/* Size via --icon-size (default 1em — scales with text). Override per context:
+   component sets --icon-size, or a future .icon-sm / .icon-lg utility. */
+svg[class*="icon"] {
+	inline-size: var(--icon-size, 1em);
+	aspect-ratio: 1;
+	pointer-events: none;
+}

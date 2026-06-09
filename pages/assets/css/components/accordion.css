@@ -1,0 +1,90 @@
+/* Accordion Component — pure CSS via ::details-content
+ * Usage:
+ *   <details class="accordion">
+ *     <summary>
+ *       Question text
+ *       <svg class="accordion-icon" aria-hidden="true" .../>
+ *     </summary>
+ *     <div class="accordion-body">Answer text</div>
+ *   </details>
+ *
+ * Requirements:
+ *   interpolate-size: allow-keywords — enables block-size transition 0 → auto
+ *   without JS. Lives in reset.css under @media (prefers-reduced-motion: no-preference).
+ *
+ * Config props (set on a context class for variants —
+ *   e.g. .faq { --accordion-bg: var(--bg-surface); --accordion-radius: var(--radius-10) }):
+ *   --accordion-bg          background (default: transparent)
+ *   --accordion-radius      border-radius (default: 0)
+ *   --accordion-padding-x   horizontal padding (default: --space-24)
+ *   --accordion-padding-y   vertical padding (default: --space-24)
+ *   --accordion-icon-rotate icon rotation when open (default: 45deg — plus→×; chevron: 180deg)
+ */
+
+.accordion {
+	overflow: hidden; /* fallback for browsers without ::details-content */
+	background-color: var(--accordion-bg, transparent);
+	border-radius: var(--accordion-radius, 0);
+
+	/* Horizontal padding on all children; bottom padding on the body (last child) */
+	& > * {
+		padding-inline: var(--accordion-padding-x, var(--space-24));
+	}
+
+	& > :last-child {
+		padding-block-end: var(--accordion-padding-y, var(--space-24));
+	}
+
+	& > summary {
+		display: grid;
+		grid-template-columns: 1fr max-content;
+		align-items: center;
+		gap: var(--space-24);
+		padding-block: var(--accordion-padding-y, var(--space-24));
+		font-size: var(--font-label-size);
+		font-weight: var(--font-label-weight);
+		color: var(--text);
+		transition: color var(--transition-fast);
+		cursor: pointer;
+		user-select: none;
+		list-style: none; /* hide standard disclosure marker */
+	}
+
+	/* WebKit marker needs its own rule */
+	& > summary::-webkit-details-marker {
+		display: none;
+	}
+
+	/* Toggle icon — scoped to summary so a leading icon in the label isn't rotated */
+	& > summary .accordion-icon {
+		flex-shrink: 0;
+		color: var(--accent);
+		rotate: 0deg;
+		transition: rotate var(--transition-normal);
+	}
+
+	&[open] > summary .accordion-icon {
+		rotate: var(--accordion-icon-rotate, 45deg);
+	}
+}
+
+/* ── Body ─────────────────────────────────────────────────────── */
+/* Padding comes from the structural rules above; this slot sets body color only. */
+
+.accordion-body {
+	color: var(--text-muted);
+}
+
+/* ── Content panel ────────────────────────────────────────────── */
+
+.accordion::details-content {
+	block-size: 0;
+	overflow: clip;
+	transition:
+		block-size var(--transition-normal),
+		content-visibility var(--transition-normal) allow-discrete;
+}
+
+.accordion[open]::details-content {
+	block-size: auto;
+}

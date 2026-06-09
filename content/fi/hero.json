@@ -1,0 +1,17 @@
+{
+  "label": "Luova HR-toimisto",
+  "title": "Meiltä saa, luovia, ratkaisuja",
+  "description": "Luovat työkalut yrityksellesi.",
+  "playButton": "Katso video",
+  "mainVideoUrl": "https://www.youtube.com/embed/DEV0dwQh-v8",
+  "chat": [
+    {
+      "id": "15416226",
+      "message": "Hei, olen Tima."
+    },
+    {
+      "id": "15416227",
+      "message": "Henkilöstöpäällikkö"
+    }
+  ]
+}

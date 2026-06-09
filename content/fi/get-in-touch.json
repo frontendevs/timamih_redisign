@@ -1,0 +1,28 @@
+{
+  "title": "Ota yhteyttä",
+  "description": "soita tai lähetä viesti WhatsAppiin tai Telegramiin.",
+  "copyText": "Kopioi yhteystietojamme täältä",
+  "tunnus": "Yritys TimaMih Tmi on virallisesti rekisteröity Suomessa Y-tunnus 3123887-1 Alv rek.",
+  "contacts": [
+    {
+      "id": "19771951",
+      "icon": "telephone",
+      "url": "358453491091"
+    },
+    {
+      "id": "19771952",
+      "icon": "telegram",
+      "url": "timamih_com"
+    },
+    {
+      "id": "19771953",
+      "icon": "whatsapp",
+      "url": "358453491091"
+    },
+    {
+      "id": "76883121",
+      "icon": "instagram",
+      "url": "timamih_com"
+    }
+  ]
+}

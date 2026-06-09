@@ -1,0 +1,36 @@
+/* Visually Hidden + Skip Link — accessibility utilities.
+ *
+ * .visually-hidden — always hidden visually, readable by assistive tech.
+ *     <span class="visually-hidden">Additional context for screen readers</span>
+ *     NOT for decorative content (use aria-hidden="true") or toggled UI (display:none).
+ *
+ * .skip-link — hidden until focused, then a FIXED visible button (no layout shift).
+ *     <a class="skip-link" href="#main">Skip to content</a>
+ *
+ * Both share the hide rule via :is(); .skip-link drops out of it on focus and
+ * gets its own visible overlay below.
+ */
+
+:is(.visually-hidden, .skip-link:not(:focus):not(:focus-within)) {
+	inline-size: 1px;
+	block-size: 1px;
+	position: absolute;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	white-space: nowrap;
+	border: 0;
+	clip: rect(0, 0, 0, 0);
+}
+
+/* Focused skip link — fixed overlay, never shifts page layout */
+.skip-link:is(:focus, :focus-within) {
+	position: fixed;
+	inset-block-start: var(--space-8);
+	inset-inline-start: var(--space-8);
+	z-index: 9999;
+	padding: var(--space-8) var(--space-16);
+	color: var(--accent-text);
+	background-color: var(--accent);
+	border-radius: var(--radius-8);
+}

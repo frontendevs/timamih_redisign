@@ -1,0 +1,79 @@
+/* Toast notification — singleton, fixed top-right
+ * One reused node per page (multiple fixed toasts would overlap):
+ *   <output class="toast" data-js="toast" aria-live="polite"></output>
+ *   <output> has implicit role=status — no explicit role (redundant ARIA).
+ *   aria-live kept: output live-region support is historically uneven.
+ *
+ * Lifecycle:
+ *   — CSS animation handles the VISUAL show/fade only.
+ *   — JS owns the lifecycle: set textContent (+ optional dataset.type) to show;
+ *     after ~4000ms clear textContent (→ :empty → display:none); to re-show the
+ *     same node, re-append it (remove()/append()) so the animation restarts.
+ *
+ * Rich/icon toast is JS-built, never static markup (a non-empty singleton would
+ * show on load): el.replaceChildren(svgIcon, span); cleanup el.replaceChildren().
+ *   <svg class="toast-icon" aria-hidden="true">  + <span>Saved</span>
+ * .toast-icon inherits global icon sizing via --icon-size; grid layout auto-applies
+ * via :has(.toast-icon).
+ */
+
+.toast {
+	max-inline-size: min(90vw, 28rem);
+	display: block; /* text-only default; grid only when an icon is present (below) */
+	position: fixed;
+	inset-block-start: var(--space-32);
+	inset-inline-end: var(--space-32);
+	z-index: 9000;
+	padding: var(--space-16) var(--space-20);
+	font-size: var(--font-14);
+	color: var(--text);
+	background-color: var(--bg-elevated);
+	border: 1.5px solid var(--border-muted);
+	border-radius: var(--toast-radius, var(--radius-8));
+	animation: toast-show 4s ease forwards;
+	pointer-events: none; /* status, not interactive — never block clicks under it */
+
+	&[data-type="success"] {
+		color: var(--success-text);
+		background-color: var(--success-bg);
+		border-color: oklch(from var(--success) l c h / 0.4);
+	}
+
+	&[data-type="error"] {
+		color: var(--error-text);
+		background-color: var(--error-bg);
+		border-color: oklch(from var(--error) l c h / 0.4);
+	}
+
+	&:empty {
+		display: none;
+	}
+
+	/* Icon + text layout — only when an icon is present */
+	&:has(.toast-icon) {
+		display: grid;
+		grid-template-columns: auto 1fr;
+		align-items: center;
+		gap: var(--space-12);
+	}
+}
+
+/* Fade in from top-right, hold, fade out upward */
+@keyframes toast-show {
+	0% {
+		opacity: 0;
+		translate: 0 calc(var(--space-16) * -1);
+	}
+	10% {
+		opacity: 1;
+		translate: 0 0;
+	}
+	80% {
+		opacity: 1;
+		translate: 0 0;
+	}
+	100% {
+		opacity: 0;
+		translate: 0 calc(var(--space-16) * -1);
+	}
+}

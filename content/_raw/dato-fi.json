@@ -1,0 +1,446 @@
+{
+  "_site": {
+    "globalSeo": {
+      "siteName": "TimaMih",
+      "facebookPageUrl": "https://www.facebook.com/TimaMihTmi",
+      "titleSuffix": " TimaMih ",
+      "fallbackSeo": {
+        "description": "Verkkosivustot, verkkokaupat, logot, suunnittelu, sosiaalisen median suunnittelu, konsultointi ja paljon muuta. Luovat työkalut yrityksellesi.",
+        "title": "Luova HR-toimisto | Vantaa - Helsinki",
+        "image": {
+          "url": "https://www.datocms-assets.com/71846/1678001848-favicon.svg"
+        }
+      }
+    }
+  },
+  "navigation": {
+    "headerlinks": [
+      {
+        "id": "21945230",
+        "name": "Kotisivu",
+        "navanchor": "/"
+      },
+      {
+        "id": "15424746",
+        "name": "Miten toimimme",
+        "navanchor": "#how-we-work"
+      },
+      {
+        "id": "15424747",
+        "name": "Mitä me tarjoamme",
+        "navanchor": "#what-we-offer"
+      },
+      {
+        "id": "15424748",
+        "name": "Meistä",
+        "navanchor": "#who-we-are"
+      },
+      {
+        "id": "15424749",
+        "name": "Ota yhteyttä",
+        "navanchor": "#get-in-touch"
+      }
+    ]
+  },
+  "heroSection": {
+    "label": "Luova HR-toimisto",
+    "title": "Meiltä saa, luovia, ratkaisuja",
+    "description": "Luovat työkalut yrityksellesi.",
+    "playButton": "Katso video",
+    "mainVideoUrl": "https://www.youtube.com/embed/DEV0dwQh-v8",
+    "chat": [
+      {
+        "id": "15416226",
+        "message": "Hei, olen Tima."
+      },
+      {
+        "id": "15416227",
+        "message": "Henkilöstöpäällikkö"
+      }
+    ]
+  },
+  "howwework": {
+    "title": "Työvaiheet",
+    "steps": [
+      {
+        "id": "15416874",
+        "title": "Ideointikeskustelut",
+        "description": "Alussa meidän kannattaa selvitettävä, millaista asiantuntijaa sinulta puuttuu ja priorisoitava oikein, tai sinun on rakennettava toimiva tiimi alusta alkaen esimerkiksi uuteen projektiisi."
+      },
+      {
+        "id": "15416875",
+        "title": "Alkuun pääseminen",
+        "description": "Suoritan haastattelut ja valitsen sinulle asiantuntijan, joka ratkaisee ongelman tietyssä ajassa. Nopeuttaa ja helpottaa prosessia valitsemalla jokin alla ehdotetuista luokista."
+      },
+      {
+        "id": "15416876",
+        "title": "Työprosessi",
+        "description": "Asiantuntijat näyttävät sinulle työn välivaiheet, jotka on korjattava varhaisessa vaiheessa."
+      },
+      {
+        "id": "15416877",
+        "title": "Promootio",
+        "description": "Suosittelemme tilaamaan meiltä mainostuotteita kohdeyleisön saavuttamiseksi. Sisällöntuotannon lisäksi promootion tärkeä osa on mediatuotteen mainostaminen eri verkkoalustoilla. "
+      },
+      {
+        "id": "15416878",
+        "title": "Palaute",
+        "description": "Tarvitsemme palautetta palvelumme parantamiseksi. Mitä voimme parantaa? Mitä sääntöjä meidän tulee noudattaa?"
+      }
+    ]
+  },
+  "whatweoffer": {
+    "title": "Mitä me tarjoamme",
+    "services": [
+      {
+        "id": "15811463",
+        "active": true,
+        "order": 1,
+        "title": "Mainonta",
+        "description": "Meillä on yksilöllinen lähestymistapa asiakkaisiimme ja heidän kohdeyleisöönsä useilla Internet-alustoilla. Prosessin nopeuttamiseksi ja helpottamiseksi valitse jokin ehdotettu mainontatyyppi: kontekstuaalinen, kohdistettu, videomainonta, käyntikortit, bannerit, tarrat, lentolehtiset.",
+        "price": "150",
+        "buttonName": "Markkinoijat",
+        "illustration": "ads",
+        "teammates": [
+          {
+            "id": "39352073",
+            "recruit": false,
+            "labelName": "",
+            "title": "Igor Ivanov",
+            "proff": "Markkinoija",
+            "description": "Asiantuntija, joka auttaa mainostamaan tuotteitasi tai palveluasi. Tarjoan neuvoja, luon optimaalisten ratkaisujen paketin, luon mainospuheita ja Web portfolioita.",
+            "isactivatedurl": true,
+            "url": "igor.ivanov@everlume.fi",
+            "avatar": {
+              "url": "https://www.datocms-assets.com/71846/1657817162-igor_ivanov.webp"
+            }
+          },
+          {
+            "id": "55286989",
+            "recruit": false,
+            "labelName": "",
+            "title": "Ivan Zaletov",
+            "proff": "Mainosavustaja",
+            "description": "Pääassistentti teknisissä tehtävissä sekä haloefektien alalla.",
+            "isactivatedurl": false,
+            "url": "ivan@gmail.com",
+            "avatar": {
+              "url": "https://www.datocms-assets.com/71846/1661096287-234234234x-1.webp"
+            }
+          }
+        ]
+      },
+      {
+        "id": "64111353",
+        "active": true,
+        "order": 2,
+        "title": "Suunnittelu",
+        "description": "Nyt mediapalvelumme sisältää myös web-suunnittelun, Wordpress-verkkosivut sekä mobiilisovellusten kehityksen. Nykymaailmassa hyvin suunniteltu ja nykyaikainen kotisivu on välttämättömyys mille tahansa liiketoiminnalle. Suunnitteluluokkat: Grafiikka, Web, Mobiilisovellukset, UX/UI, 3D, kuvitukset.",
+        "price": "400",
+        "buttonName": "Kehittäjät",
+        "illustration": "it",
+        "teammates": [
+          {
+            "id": "64120822",
+            "recruit": false,
+            "labelName": "",
+            "title": "Violetta Suokas",
+            "proff": "ux/ui suunnittelija",
+            "description": "Web-suunnittelun, Wordpress-verkkosivujen ja mobiilisovellusten kehittämisen asiantuntija. Suunnittelen myös: logoja, bannereita, piirroksia ja käyntikortteja.",
+            "isactivatedurl": true,
+            "url": "https://www.instagram.com/letta_creative/",
+            "avatar": {
+              "url": "https://www.datocms-assets.com/71846/1674402519-45345345.webp"
+            }
+          }
+        ]
+      },
+      {
+        "id": "15811465",
+        "active": true,
+        "order": 3,
+        "title": "Videotuotanto",
+        "description": "Valitsimme sinulle parhaimmat asiantuntijat, ohjaajat, bloggaajat, ja video-operaattorit, joilla on vankka kokemus sekä pitkä työkokemus. Muista, että meillä on laaja hintahaarukka, jonka avulla voimme mukautua budjettiin kuin budjettiin. Videoluokkat: Elokuvat, Tapahtumat, Leikkeet, Mainonta, Podcastit, AI, Reels.",
+        "price": "395",
+        "buttonName": "mediatyöntekijät",
+        "illustration": "video",
+        "teammates": [
+          {
+            "id": "40677983",
+            "recruit": false,
+            "labelName": "",
+            "title": "Evgeni Kamardin",
+            "proff": "Videokuvaaja, ohjaaja.",
+            "description": "Luon omalla työlläni esineistä, väristä, äänistä ja sanoista kirkkaita tarinoita.",
+            "isactivatedurl": false,
+            "url": "https://vimeo.com/user19148308",
+            "avatar": {
+              "url": "https://www.datocms-assets.com/71846/1657830662-evgeny-kamardin.jpg"
+            }
+          },
+          {
+            "id": "40677984",
+            "recruit": true,
+            "labelName": "aktiivinen",
+            "title": "Yora Avalainen",
+            "proff": "Videokuvaaja, ohjaaja.",
+            "description": "Luon uniikkeja kohtauksia ilmakuvauskopterilla sekä teen myös perusvideokuvausta Avaimet käteen -periaatteella.",
+            "isactivatedurl": true,
+            "url": "https://www.youtube.com/@discoveryfinland24/videos",
+            "avatar": {
+              "url": "https://www.datocms-assets.com/71846/1657961149-345343.webp"
+            }
+          },
+          {
+            "id": "40677985",
+            "recruit": false,
+            "labelName": "",
+            "title": "Ilya Redin",
+            "proff": "Videontekijä, ohjaaja, käsikirjoittaja.",
+            "description": "YouTube-videoiden lisäksi kuvaan dokumentti- ja fiktioelokuvia, mainosvideoita ja musiikkivideoita.",
+            "isactivatedurl": false,
+            "url": "https://www.youtube.com/@ieredin",
+            "avatar": {
+              "url": "https://www.datocms-assets.com/71846/1657961216-876565876.webp"
+            }
+          },
+          {
+            "id": "40677986",
+            "recruit": true,
+            "labelName": "aktiivinen",
+            "title": "Yura Papu",
+            "proff": "Youtube-bloggaaja",
+            "description": "Urani aikana olen kerännyt yli 6 miljoonaa katselukertaa YouTubessa. “YuraPaPu” kertoo omalla kanavallaan elämästä Suomessa.",
+            "isactivatedurl": true,
+            "url": "https://www.youtube.com/@yuraPaPu",
+            "avatar": {
+              "url": "https://www.datocms-assets.com/71846/1657963627-yura_papu.jpg"
+            }
+          },
+          {
+            "id": "106468776",
+            "recruit": false,
+            "labelName": "",
+            "title": "Alisa Vlasova",
+            "proff": "Videokuvaaja",
+            "description": "Luon innovatiivisia mainoksia ja unohtumattomia videoita taiteilijoille, tanssijoille, muusikoille jne. \n",
+            "isactivatedurl": false,
+            "url": "",
+            "avatar": {
+              "url": "https://www.datocms-assets.com/71846/1682939995-432452342.webp"
+            }
+          }
+        ]
+      },
+      {
+        "id": "15811464",
+        "active": true,
+        "order": 4,
+        "title": "Valokuvaus",
+        "description": "Valokuvaajillamme on erilaisia kuvaustyylejä sekä laaja hintahaarukka. Laadukkaat valokuvaussetit vaikuttavat suuresti yrityksesi tunnettuuteen. Valokuvausluokat: Muotokuva, Aihe, Reportaasi, Tapahtumat, Häät, Perhe.",
+        "price": "95",
+        "buttonName": "valokuvaajat",
+        "illustration": "photo",
+        "teammates": [
+          {
+            "id": "40675987",
+            "recruit": true,
+            "labelName": "Aktiivinen",
+            "title": "Aleksandr Andro",
+            "proff": "Valokuvaaja",
+            "description": "Teen sen nopeasti ja tehokkaasti, kuvaan häitä ja julkisia tapahtumia sekä kiinteistöjä.",
+            "isactivatedurl": true,
+            "url": "https://instagram.com/alexandrandrohell?igshid=YmMyMTA2M2Y=",
+            "avatar": {
+              "url": "https://www.datocms-assets.com/71846/1657960603-andro-1.webp"
+            }
+          },
+          {
+            "id": "40675993",
+            "recruit": false,
+            "labelName": "",
+            "title": "Anastassia Klement",
+            "proff": "Valokuvaaja",
+            "description": "Ammattitaitoinen lähestymistapa valokuvaukseen sekä editoimiseen. Lisäksi luon mainoksia kuvaamalla erilaisia tavaroita.",
+            "isactivatedurl": false,
+            "url": "https://www.facebook.com/fotoelu",
+            "avatar": {
+              "url": "https://www.datocms-assets.com/71846/1654093455-anastassia_klement.webp"
+            }
+          },
+          {
+            "id": "106468784",
+            "recruit": false,
+            "labelName": "",
+            "title": "Alisa Vlasova",
+            "proff": "Valokuvaaja",
+            "description": "Teen valokuvausta uniikeilla konsepteilla ja kamerakombokuvauksia - valokuva- ja videotarinoita.",
+            "isactivatedurl": false,
+            "url": "",
+            "avatar": {
+              "url": "https://www.datocms-assets.com/71846/1682939995-432452342.webp"
+            }
+          }
+        ]
+      },
+      {
+        "id": "15811466",
+        "active": true,
+        "order": 5,
+        "title": "3d-grafiikka",
+        "description": "Kuvia 3D-visualisointiin, 360 asteen kuvia, 3D-objektien mallintamista. Näitä palveluita usein tarvitsevat verkkokaupat, rakennusliiketoiminta ja monet muut alat.",
+        "price": "1900",
+        "buttonName": "suunnittelijat",
+        "illustration": "graphic",
+        "teammates": [
+          {
+            "id": "39396998",
+            "recruit": false,
+            "labelName": "",
+            "title": "Dmitry Korolevsky",
+            "proff": "3D – 360 -asiantuntija",
+            "description": "3D-visualisointikuvat. 360-asteen kuvat ja 3D-kiertoajelut. Tuotekuvaukset – 360° tuotekuvat ja tuoteanimaatiot.",
+            "isactivatedurl": true,
+            "url": "https://dmitrykorolevskiy.myportfolio.com/projects?fbclid=IwAR1uZXWu3xnFTiPbuoy1hJlOphhWtw8KV-tKC_j0z77CqOcc8Y1wz7n1qwE",
+            "avatar": {
+              "url": "https://www.datocms-assets.com/71846/1657817055-dmitri_korolevski.webp"
+            }
+          },
+          {
+            "id": "40677987",
+            "recruit": false,
+            "labelName": "",
+            "title": "Evgeny Pukki",
+            "proff": "3D-mallinnuksen asiantuntija",
+            "description": "Työstän 3D-grafiikkaa erilaisten objektien 3D-mallinnuksia. Voin myös luoda kaikenlaisia visuaalisia efektejä. ",
+            "isactivatedurl": true,
+            "url": "https://www.youtube.com/@evgenypukki524/videos",
+            "avatar": {
+              "url": "https://www.datocms-assets.com/71846/1657958426-evgeny_pukki.jpg"
+            }
+          }
+        ]
+      },
+      {
+        "id": "15811467",
+        "active": true,
+        "order": 6,
+        "title": "Ilmakuvaus",
+        "description": "Ilmakuvaus on ollut jo pitkään saatavilla myös pienyrityksille, tällä työkalulla saat kauniita ja laadukkaita valokuva- ja videosisältöjä erilaisiin tehtäviin. Tämä kuvaus lisää vaihtelua mainosvideoosi ja tekee siitä tasapainoisemman. Ilmakuvausluokat: Häät, tapahtuma, Geodeettinen, Mainonta, Reitti, Urheilu.",
+        "price": "120",
+        "buttonName": "operaattorit",
+        "illustration": "drone",
+        "teammates": [
+          {
+            "id": "40677988",
+            "recruit": false,
+            "labelName": "",
+            "title": "Evgeni Kamardin",
+            "proff": "Drone-operaattori",
+            "description": "Pienikin videotaiteen osa on tarina. Sillä ei ole merkitystä, onko kyseessä mainos, elokuva tai dokumentti.",
+            "isactivatedurl": true,
+            "url": "https://vimeo.com/user19148308",
+            "avatar": {
+              "url": "https://www.datocms-assets.com/71846/1657830662-evgeny-kamardin.jpg"
+            }
+          },
+          {
+            "id": "40677989",
+            "recruit": false,
+            "labelName": "",
+            "title": "Yora Avalainen",
+            "proff": "Drone-operaattori",
+            "description": "Luon ainutlaatuisia otoksia dronella ilmasta käsin. Lisäksi teen perusvideokuvausta Avaimet käteen -periaatteella.",
+            "isactivatedurl": null,
+            "url": "",
+            "avatar": {
+              "url": "https://www.datocms-assets.com/71846/1657961149-345343.webp"
+            }
+          }
+        ]
+      },
+      {
+        "id": "64111437",
+        "active": true,
+        "order": 7,
+        "title": "Konsultaatiot ja käännökset",
+        "description": "Sinulla on myös mahdollisuus saada konsultaatioita eri asiantuntijoilta tai kääntäjiltä rakenteen ja liiketoimintasi menestyksekkääseen kehittämiseen. Neuvottelujen luokka: Hallinto, talous, laki, koulutus, HR.",
+        "price": "50",
+        "buttonName": "konsultit",
+        "illustration": "consult",
+        "teammates": [
+          {
+            "id": "64120790",
+            "recruit": false,
+            "labelName": "",
+            "title": "Stan Marinets",
+            "proff": "Kääntäjä-tulkki",
+            "description": "Asiakirjojen Auktorisoitu kääntäjä kieliparissa suomi-venäjä, kääntäjä ja tulkki kielissä englanti-suomi-venäjä-viro, järjestötoiminnan asiantuntija.",
+            "isactivatedurl": true,
+            "url": "https://www.linkedin.com/mwlite/in/stanislav-marinets-665899100",
+            "avatar": {
+              "url": "https://www.datocms-assets.com/71846/1657974643-stan_marinets.jpg"
+            }
+          }
+        ]
+      },
+      {
+        "id": "64111449",
+        "active": true,
+        "order": 8,
+        "title": "Ääni",
+        "description": "Jälkiäänitys eli dubbaus tai selostus voi pelastaa minkä tahansa sisällön sekä parantaa lopputuotteen laatua ja yleiskuvaa. Oikea musiikki luo videolle oikean tunnelman. Jälkiäänitysluokka: Elokuvat, Tapahtumat, Leike, Mainonta, Haastattelu, TV, Äänikirjat.",
+        "price": "150",
+        "buttonName": "Äänitysasiantuntijat",
+        "illustration": "sound",
+        "teammates": [
+          {
+            "id": "64120771",
+            "recruit": false,
+            "labelName": "",
+            "title": "Tatiana Nedenko",
+            "proff": "Jälkiäänitys",
+            "description": "Jälkiäänitysnäyttelijä: selostus, mainosten dubbaus, äänitarinan luominen venäjäksi ja englanniksi.",
+            "isactivatedurl": false,
+            "url": "",
+            "avatar": {
+              "url": "https://www.datocms-assets.com/71846/1663946208-79373640_2593834340835354_743595436077481984_n.webp"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "ourlittlestory": {
+    "title": "Meistä",
+    "description": "Löydämme sinulle sopivat asiantuntijat ja rakennamme suotuisat työryhmät. Yrityksemme on verkostoitunut pitkään, se on keskittynyt vuoropuheluun henkilöstön kanssa, voimme tehdä haastatteluja sekä motivoida henkilökuntaa.\n\nMinkä tahansa yrityksen henkilöstö jättää usein toivomisen varaa, joten suuret yritykset turvautuvat yhä useammin rekrytointipalveluihin, koska hyvä tiimi on 75% menestyksestä.\n"
+  },
+  "getintouch": {
+    "title": "Ota yhteyttä",
+    "description": "soita tai lähetä viesti WhatsAppiin tai Telegramiin.",
+    "copyText": "Kopioi yhteystietojamme täältä",
+    "tunnus": "Yritys TimaMih Tmi on virallisesti rekisteröity Suomessa Y-tunnus 3123887-1 Alv rek.",
+    "contacts": [
+      {
+        "id": "19771951",
+        "icon": "telephone",
+        "url": "358453491091"
+      },
+      {
+        "id": "19771952",
+        "icon": "telegram",
+        "url": "timamih_com"
+      },
+      {
+        "id": "19771953",
+        "icon": "whatsapp",
+        "url": "358453491091"
+      },
+      {
+        "id": "76883121",
+        "icon": "instagram",
+        "url": "timamih_com"
+      }
+    ]
+  }
+}

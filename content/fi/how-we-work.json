@@ -1,0 +1,30 @@
+{
+  "title": "Työvaiheet",
+  "steps": [
+    {
+      "id": "15416874",
+      "title": "Ideointikeskustelut",
+      "description": "Alussa meidän kannattaa selvitettävä, millaista asiantuntijaa sinulta puuttuu ja priorisoitava oikein, tai sinun on rakennettava toimiva tiimi alusta alkaen esimerkiksi uuteen projektiisi."
+    },
+    {
+      "id": "15416875",
+      "title": "Alkuun pääseminen",
+      "description": "Suoritan haastattelut ja valitsen sinulle asiantuntijan, joka ratkaisee ongelman tietyssä ajassa. Nopeuttaa ja helpottaa prosessia valitsemalla jokin alla ehdotetuista luokista."
+    },
+    {
+      "id": "15416876",
+      "title": "Työprosessi",
+      "description": "Asiantuntijat näyttävät sinulle työn välivaiheet, jotka on korjattava varhaisessa vaiheessa."
+    },
+    {
+      "id": "15416877",
+      "title": "Promootio",
+      "description": "Suosittelemme tilaamaan meiltä mainostuotteita kohdeyleisön saavuttamiseksi. Sisällöntuotannon lisäksi promootion tärkeä osa on mediatuotteen mainostaminen eri verkkoalustoilla."
+    },
+    {
+      "id": "15416878",
+      "title": "Palaute",
+      "description": "Tarvitsemme palautetta palvelumme parantamiseksi. Mitä voimme parantaa? Mitä sääntöjä meidän tulee noudattaa?"
+    }
+  ]
+}

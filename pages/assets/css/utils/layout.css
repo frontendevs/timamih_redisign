@@ -1,0 +1,32 @@
+/* Layout primitives.
+ *   body     — single owner of max-width (1440px) + centering.
+ *   .main    — page content root: overflow guard + container context.
+ *   .section — vertical rhythm + horizontal gutter + container context.
+ *
+ * Typical:
+ *   <body>
+ *     <main class="main">
+ *       <section class="section">…</section>
+ *     </main>
+ *   </body>
+ */
+
+body {
+	max-inline-size: 1440px;
+	margin-inline: auto;
+}
+
+/* ── Page root ────────────────────────────────────────────────── */
+
+.main {
+	overflow-x: clip;
+	container: main / inline-size;
+}
+
+/* ── Section — vertical rhythm + gutter ─────────────────────────── */
+
+.section {
+	padding-block: var(--section-padding-block, clamp(var(--space-64), 6vw, var(--space-96)));
+	padding-inline: var(--space-32);
+	container: section / inline-size;
+}

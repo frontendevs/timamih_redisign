@@ -1,0 +1,289 @@
+/* Form Component
+ * Usage:
+ *   <form class="form">
+ *     <div class="form-group">
+ *       <label class="form-label" for="email">Email</label>
+ *       <input class="input" type="email" id="email" required autocomplete="email">
+ *       <span class="form-error" aria-live="polite">Error message</span>
+ *     </div>
+ *     <div class="form-submit-group">
+ *       <button class="button button-primary" type="submit">Submit</button>
+ *     </div>
+ *   </form>
+ *
+ * Variants:
+ *   textarea.input          — resizable textarea
+ *   select.input            — custom arrow, filled-state border
+ *   .radio-group > label.radio-option > input[type="radio"] + span
+ *   label.checkbox-option   > input[type="checkbox"] + span
+ *   .form-hint              — field helper text
+ *   .form-status            — form-level feedback after submit (.is-success / .is-error)
+ *
+ * Notes:
+ *   — SVG colors inside url() are hardcoded (e.g. %23888 = #888, %23000 = #000).
+ *     CSS custom properties are not interpolated inside url().
+ *     Update manually per project when icon color needs to change.
+ *   — Submit button gets a VISUAL guard (dim + non-clickable) while required fields
+ *     are invalid — NOT a real disabled state. Native validation blocks the actual
+ *     submit. For a true disabled/loading control use [disabled] or JS.
+ *   — .form-label appends " *" automatically for required inputs via :has().
+ *   — Validation error shows only after interaction (:user-invalid — already post-blur).
+ *     Server/JS errors: add .is-visible to .form-error.
+ */
+
+/* ── Layout ───────────────────────────────────────────────────── */
+
+.form {
+	display: grid;
+	gap: var(--space-24);
+}
+
+.form-group {
+	display: grid;
+	gap: var(--space-6);
+}
+
+.form-submit-group {
+	display: grid;
+	justify-items: start;
+	gap: var(--space-12);
+}
+
+/* ── Submit: visual guard while required fields are invalid ───── */
+/* Not a real disabled state — native validation blocks the actual submit. */
+[type="submit"] {
+	.form:has(:required:invalid) & {
+		opacity: 0.5;
+		cursor: not-allowed;
+		pointer-events: none;
+	}
+}
+
+/* ── Label ────────────────────────────────────────────────────── */
+
+.form-label {
+	font-size: var(--font-label-size);
+	font-weight: var(--font-label-weight);
+	line-height: var(--font-label-lh);
+	letter-spacing: var(--font-label-ls);
+	color: var(--text);
+
+	/* Required field marker — appended automatically via CSS */
+	.form-group:has(.input:required) &::after {
+		color: var(--accent);
+		content: " *";
+	}
+}
+
+/* ── Input ────────────────────────────────────────────────────── */
+
+.input {
+	inline-size: 100%;
+	min-inline-size: 0;
+	padding: var(--input-padding, var(--space-12) var(--space-16));
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: var(--text);
+	background-color: var(--bg-surface);
+	border: 1.5px solid var(--border);
+	border-radius: var(--input-radius, var(--radius-8));
+	transition: border-color var(--transition-fast);
+
+	&::placeholder {
+		color: var(--text-subtle);
+	}
+
+	/* Focus ring (outline) is the global :focus-visible layer; here only border feedback */
+	&:focus-visible {
+		border-color: var(--accent);
+	}
+
+	/* :user-invalid = after interaction; :not(:focus) hides the error while the field
+	   is being actively edited (no flicker), shows it on blur — incl. required-empty */
+	&:user-invalid:not(:focus) {
+		border-color: var(--error);
+	}
+
+	&:disabled {
+		opacity: 0.5;
+		background-color: var(--bg-muted);
+		cursor: not-allowed;
+		pointer-events: none;
+	}
+}
+
+/* Textarea variant */
+textarea.input {
+	min-block-size: 120px;
+	overflow: auto;
+	text-overflow: clip;
+	resize: vertical;
+}
+
+/* Select variant — custom arrow
+ * appearance: none removes native OS chrome; arrow is provided via background-image.
+ * SVG stroke %23888 = #888 — update per project if icon color differs. */
+select.input {
+	min-inline-size: 0;
+	padding-inline-end: var(--space-40);
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	color: var(--select-txt-color, var(--text-subtle));
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='none' stroke='%23888' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' d='M2 4l4 4 4-4'/%3E%3C/svg%3E");
+	background-position: right var(--space-12) center;
+	background-repeat: no-repeat;
+	transition:
+		border-color var(--transition-fast),
+		color var(--transition-fast);
+	cursor: pointer;
+	appearance: none;
+
+	& option {
+		color: var(--text);
+		background-color: var(--bg-surface);
+	}
+
+	& option:checked {
+		background-color: oklch(from var(--accent) l c h / 0.2);
+	}
+
+	/* Filled state — an option other than placeholder is selected */
+	&:has(option:checked:not([value=""])) {
+		color: var(--select-txt-filled, var(--text));
+		border-color: var(--select-border-color, var(--accent));
+	}
+
+	&:focus-visible {
+		border-color: var(--select-border-color, var(--accent));
+	}
+
+	@media (hover: hover) {
+		&:hover {
+			color: var(--select-txt-filled, var(--text));
+			border-color: var(--select-border-color, var(--accent));
+		}
+	}
+}
+
+/* ── Error message ────────────────────────────────────────────── */
+
+.form-error {
+	display: none;
+	padding: var(--space-10) var(--space-14);
+	font-size: var(--font-caption-size);
+	color: var(--error-text);
+	background-color: var(--error-bg, transparent);
+	border: 1.5px solid var(--error-border, transparent);
+	border-radius: var(--radius-8);
+
+	/* Client-side: shown when the field is :user-invalid and not being edited */
+	.form-group:has(.input:user-invalid:not(:focus)) & {
+		display: block;
+	}
+
+	/* Server/JS-side: add .is-visible. [hidden] still wins (hard node off). */
+	&.is-visible:not([hidden]) {
+		display: block;
+	}
+}
+
+/* ── Hint & status ────────────────────────────────────────────── */
+
+/* Field helper text */
+.form-hint {
+	font-size: var(--font-caption-size);
+	color: var(--text-muted);
+}
+
+/* Form-level feedback after submit — JS toggles .is-success / .is-error.
+   min-block-size reserves one line so appearance doesn't shift layout. */
+.form-status {
+	min-block-size: 1.2em;
+	font-size: var(--font-caption-size);
+	color: var(--text-muted);
+
+	&.is-success {
+		color: var(--success-text);
+	}
+
+	&.is-error {
+		color: var(--error-text);
+	}
+}
+
+/* ── Radio group ──────────────────────────────────────────────── */
+
+.radio-group {
+	display: grid;
+	gap: var(--space-8);
+}
+
+.radio-option {
+	display: flex;
+	align-items: center;
+	gap: var(--space-12);
+	padding: var(--space-12) var(--space-16);
+	background-color: var(--bg-surface);
+	border: 1.5px solid var(--border);
+	border-radius: var(--radius-8);
+	transition: border-color var(--transition-fast);
+	cursor: pointer;
+
+	& input[type="radio"] {
+		flex-shrink: 0;
+		accent-color: var(--accent);
+	}
+
+	& span {
+		font-size: var(--font-15);
+		color: var(--text);
+	}
+
+	&:has(input:checked) {
+		border-color: var(--interactive);
+	}
+
+	@media (hover: hover) {
+		&:not(:has(input:checked)):hover {
+			border-color: var(--border-strong);
+		}
+	}
+}
+
+/* ── Checkbox ─────────────────────────────────────────────────── */
+
+.checkbox-option {
+	display: grid;
+	grid-template-columns: 1.25rem auto;
+	align-items: start;
+	gap: var(--space-12);
+	font-size: var(--font-label-size);
+	color: var(--text-muted);
+	cursor: pointer;
+
+	& input[type="checkbox"] {
+		inline-size: 1.25rem;
+		aspect-ratio: 1;
+		flex-shrink: 0;
+		margin-block-start: 0.15em;
+		background-color: transparent;
+		border: 1.5px solid var(--border);
+		border-radius: var(--radius-4);
+		transition:
+			background-color var(--transition-fast),
+			border-color var(--transition-fast);
+		cursor: pointer;
+		appearance: none;
+
+		/* Checkmark via SVG — stroke %23000 = #000.
+		 * For light-on-dark accent backgrounds change to %23fff. */
+		&:checked {
+			background-color: var(--accent);
+			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='none' stroke='%23000000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' d='M2 6l3 3 5-5'/%3E%3C/svg%3E");
+			background-position: center;
+			background-repeat: no-repeat;
+			border-color: var(--accent);
+		}
+	}
+}

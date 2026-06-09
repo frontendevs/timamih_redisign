@@ -1,0 +1,446 @@
+{
+  "_site": {
+    "globalSeo": {
+      "siteName": "timamih",
+      "facebookPageUrl": "https://www.facebook.com/TimaMihTmi",
+      "titleSuffix": " TimaMih",
+      "fallbackSeo": {
+        "description": "Websites, online stores, logos, design, social media design, consulting, and more. Creative tools for your business.",
+        "title": "Creative HR Agency - Finland ",
+        "image": {
+          "url": "https://www.datocms-assets.com/71846/1678001848-favicon.svg"
+        }
+      }
+    }
+  },
+  "navigation": {
+    "headerlinks": [
+      {
+        "id": "21945229",
+        "name": "Main",
+        "navanchor": "/"
+      },
+      {
+        "id": "15424742",
+        "name": "How we work",
+        "navanchor": "#how-we-work"
+      },
+      {
+        "id": "15424743",
+        "name": "What we offer",
+        "navanchor": "#what-we-offer"
+      },
+      {
+        "id": "15424744",
+        "name": "About us",
+        "navanchor": "#who-we-are"
+      },
+      {
+        "id": "15424745",
+        "name": "Get in touch",
+        "navanchor": "#get-in-touch"
+      }
+    ]
+  },
+  "heroSection": {
+    "label": "Creative HR Agency",
+    "title": "We will, select, an expert, for you",
+    "description": "Creative tools for your business.",
+    "playButton": "Watch video",
+    "mainVideoUrl": "https://www.youtube.com/embed/DEV0dwQh-v8",
+    "chat": [
+      {
+        "id": "15416223",
+        "message": "Hello, I’m Tima."
+      },
+      {
+        "id": "15416225",
+        "message": "HR manager"
+      }
+    ]
+  },
+  "howwework": {
+    "title": "Stages of work",
+    "steps": [
+      {
+        "id": "15416657",
+        "title": "Discussion",
+        "description": "In the beginning, we must find out what kind of specialist you are missing and prioritize correctly, or you need to build a working team from scratch, for example, for your new project."
+      },
+      {
+        "id": "15416870",
+        "title": "Commencing the process",
+        "description": "I will conduct the interviews and choose an expert for you who will solve the problem in a certain time."
+      },
+      {
+        "id": "15416871",
+        "title": "Finishing the process",
+        "description": "Experts will show you the intermediate stages of the work that need to be fixed early."
+      },
+      {
+        "id": "15416872",
+        "title": "Promotion",
+        "description": "We recommend ordering promotional services from us for the specified target audience. In addition to content production, an important aspect is advertising the media product on different internet platforms.\n"
+      },
+      {
+        "id": "15416873",
+        "title": "Feedback",
+        "description": "We need feedback to improve our service. Please tell us which advertising services you would like to see on our website. What can we improve? What rules should we follow?"
+      }
+    ]
+  },
+  "whatweoffer": {
+    "title": "What we offer",
+    "services": [
+      {
+        "id": "15811458",
+        "active": true,
+        "order": 1,
+        "title": "Advertising",
+        "description": "We have an individual approach to our clients and their target audience on various Internet platforms. We will also help you advertise and promote your product (business cards, banners, stickers and much more).",
+        "price": "150",
+        "buttonName": "Marketers",
+        "illustration": "ads",
+        "teammates": [
+          {
+            "id": "39352072",
+            "recruit": false,
+            "labelName": "",
+            "title": "Igor Ivanov",
+            "proff": "Marketing specialist",
+            "description": "A professional working to promote your product or service. I offer consultations and can create a package of optimal solutions at all stages. I create pitches and Web portfolios.",
+            "isactivatedurl": true,
+            "url": "igor.ivanov@everlume.fi",
+            "avatar": {
+              "url": "https://www.datocms-assets.com/71846/1657817162-igor_ivanov.webp"
+            }
+          },
+          {
+            "id": "55286992",
+            "recruit": false,
+            "labelName": "",
+            "title": "Ivan Zaletov",
+            "proff": "Advertising assistant",
+            "description": "Main assistant in technical tasks and in the field of halo effects.",
+            "isactivatedurl": false,
+            "url": "ivan@gmail.com",
+            "avatar": {
+              "url": "https://www.datocms-assets.com/71846/1661096287-234234234x-1.webp"
+            }
+          }
+        ]
+      },
+      {
+        "id": "64111352",
+        "active": true,
+        "order": 2,
+        "title": "Web-design",
+        "description": "Now our service platform offers Web design and developing mobile applications, as well as the development of sites on WordPress. In today's world, a modern website has become a necessity for any business.",
+        "price": "400",
+        "buttonName": "Developers",
+        "illustration": "it",
+        "teammates": [
+          {
+            "id": "70811641",
+            "recruit": false,
+            "labelName": "",
+            "title": "Violetta Suokas",
+            "proff": "ux/ui designer",
+            "description": "Specialist in Web design, Wordpress, and mobile application design. I also create logos, banners, illustrations, and business cards.",
+            "isactivatedurl": true,
+            "url": "https://www.instagram.com/letta_creative/",
+            "avatar": {
+              "url": "https://www.datocms-assets.com/71846/1674402519-45345345.webp"
+            }
+          }
+        ]
+      },
+      {
+        "id": "15811460",
+        "active": true,
+        "order": 3,
+        "title": "Video production",
+        "description": "We have selected the best specialists, directors, bloggers, video operators, and video editors with vast work experience. Remember that we have a wide price range, which allows us to adjust to your budget.",
+        "price": "395",
+        "buttonName": "Media specialists",
+        "illustration": "video",
+        "teammates": [
+          {
+            "id": "43846998",
+            "recruit": true,
+            "labelName": "active",
+            "title": "Yura Papu",
+            "proff": "Youtube blogger",
+            "description": "Yura has over 6 million views on YouTube. On his channel, “YuraPaPu”, Yura talks about life in Finland.",
+            "isactivatedurl": true,
+            "url": "https://www.youtube.com/@yuraPaPu",
+            "avatar": {
+              "url": "https://www.datocms-assets.com/71846/1657963627-yura_papu.jpg"
+            }
+          },
+          {
+            "id": "43846999",
+            "recruit": true,
+            "labelName": "active",
+            "title": "Yora Avalainen",
+            "proff": "Video operator",
+            "description": "I create exclusive aerial shots with the help of a drone, as well as budget segment video on a turnkey basis",
+            "isactivatedurl": true,
+            "url": "https://www.youtube.com/@discoveryfinland24/videos",
+            "avatar": {
+              "url": "https://www.datocms-assets.com/71846/1657961149-345343.webp"
+            }
+          },
+          {
+            "id": "43847000",
+            "recruit": false,
+            "labelName": "",
+            "title": "Ilya Redin",
+            "proff": "Youtube blogger / Director - videographer",
+            "description": "In addition to YouTube, I film documentaries and feature films, as well as promotional videos and music videos.",
+            "isactivatedurl": false,
+            "url": "https://www.youtube.com/@ieredin",
+            "avatar": {
+              "url": "https://www.datocms-assets.com/71846/1657961216-876565876.webp"
+            }
+          },
+          {
+            "id": "43847001",
+            "recruit": false,
+            "labelName": "",
+            "title": "Evgeni Kamardin",
+            "proff": "Video operator, director",
+            "description": "I create vivid stories from objects, colors, sounds and words with the help of my work.",
+            "isactivatedurl": false,
+            "url": "https://vimeo.com/user19148308",
+            "avatar": {
+              "url": "https://www.datocms-assets.com/71846/1657830662-evgeny-kamardin.jpg"
+            }
+          },
+          {
+            "id": "106468775",
+            "recruit": false,
+            "labelName": "",
+            "title": "Alisa Vlasova",
+            "proff": "Video operator",
+            "description": "I make innovative advertising and unforgettable videos for creative people: artists, dancers, musicians, etc.",
+            "isactivatedurl": false,
+            "url": "",
+            "avatar": {
+              "url": "https://www.datocms-assets.com/71846/1682939995-432452342.webp"
+            }
+          }
+        ]
+      },
+      {
+        "id": "15811459",
+        "active": true,
+        "order": 4,
+        "title": "Photography",
+        "description": "Our photographers possess different approaches to photography and a wide price range. High-quality photosets and Photoshop effects deeply influence how your business is recognized in the media space. In life, there are many interesting events that one would want to capture in good quality.",
+        "price": "95",
+        "buttonName": "photographers",
+        "illustration": "photo",
+        "teammates": [
+          {
+            "id": "43846975",
+            "recruit": true,
+            "labelName": "Active",
+            "title": "Aleksandr Andro",
+            "proff": "Photographer",
+            "description": "I perform my work quickly and efficiently. I take photos at weddings and public events, as well as in real estate segment.",
+            "isactivatedurl": true,
+            "url": "https://instagram.com/alexandrandrohell?igshid=YmMyMTA2M2Y=",
+            "avatar": {
+              "url": "https://www.datocms-assets.com/71846/1657960603-andro-1.webp"
+            }
+          },
+          {
+            "id": "43846977",
+            "recruit": false,
+            "labelName": "",
+            "title": "Anastassia Klement",
+            "proff": "Photographer",
+            "description": "A professional approach to photography and Photoshop. I am also engaged in photo advertising of various products.",
+            "isactivatedurl": false,
+            "url": "https://www.facebook.com/fotoelu",
+            "avatar": {
+              "url": "https://www.datocms-assets.com/71846/1654093455-anastassia_klement.webp"
+            }
+          },
+          {
+            "id": "106468783",
+            "recruit": false,
+            "labelName": "",
+            "title": "Alisa Vlasova",
+            "proff": "Photographer",
+            "description": "I create photo shoots with unique concepts and \"creative camera combos\" - photo and video stories.",
+            "isactivatedurl": false,
+            "url": "",
+            "avatar": {
+              "url": "https://www.datocms-assets.com/71846/1682939995-432452342.webp"
+            }
+          }
+        ]
+      },
+      {
+        "id": "15811461",
+        "active": false,
+        "order": 5,
+        "title": "3d graphics",
+        "description": "Images for 3D visualization, 360-degree images, 3D object modelling. These services are often required for online shops, construction business and many other large industries.",
+        "price": "1900",
+        "buttonName": "designers",
+        "illustration": "graphic",
+        "teammates": [
+          {
+            "id": "39396997",
+            "recruit": false,
+            "labelName": "",
+            "title": "Dmitry Korolevsky",
+            "proff": "3D specialist - 360.",
+            "description": "Images for 3D visualization. 360-degree images and tours. Product description. 360-degree animation of products.",
+            "isactivatedurl": true,
+            "url": "https://dmitrykorolevskiy.myportfolio.com/projects?fbclid=IwAR1uZXWu3xnFTiPbuoy1hJlOphhWtw8KV-tKC_j0z77CqOcc8Y1wz7n1qwE",
+            "avatar": {
+              "url": "https://www.datocms-assets.com/71846/1657817055-dmitri_korolevski.webp"
+            }
+          },
+          {
+            "id": "43847004",
+            "recruit": false,
+            "labelName": "",
+            "title": "Evgeny Pukki",
+            "proff": "3D Modeling Specialist",
+            "description": "I am engaged in the field of 3D graphics, as well as 3D modelling of any objects. I also create various visual effects.",
+            "isactivatedurl": true,
+            "url": "https://www.youtube.com/@evgenypukki524/videos",
+            "avatar": {
+              "url": "https://www.datocms-assets.com/71846/1657958426-evgeny_pukki.jpg"
+            }
+          }
+        ]
+      },
+      {
+        "id": "15811462",
+        "active": true,
+        "order": 6,
+        "title": "Aerial filming",
+        "description": "Filming from the air has long been available for everybody. Aerial advertisement will improve the promotion of your product or service and create a “wow” effect amongst the end-users.",
+        "price": "120",
+        "buttonName": "operators",
+        "illustration": "drone",
+        "teammates": [
+          {
+            "id": "43847011",
+            "recruit": false,
+            "labelName": "",
+            "title": "Evgeni Kamardin",
+            "proff": "Drone operator",
+            "description": "Every piece of video art is a story. There is no difference, whether it is an advertisement, a feature film or a documentary project.",
+            "isactivatedurl": true,
+            "url": "https://vimeo.com/user19148308",
+            "avatar": {
+              "url": "https://www.datocms-assets.com/71846/1657830662-evgeny-kamardin.jpg"
+            }
+          },
+          {
+            "id": "43847012",
+            "recruit": false,
+            "labelName": "",
+            "title": "Yora Avalainen",
+            "proff": "drone operator",
+            "description": "I make unique aerial shots with the help of a drone, as well as budget segment video on a turnkey basis.",
+            "isactivatedurl": null,
+            "url": "",
+            "avatar": {
+              "url": "https://www.datocms-assets.com/71846/1657961149-345343.webp"
+            }
+          }
+        ]
+      },
+      {
+        "id": "64111436",
+        "active": true,
+        "order": 7,
+        "title": "Consultations",
+        "description": "A certified translator can offer you a consultation and provide translation services so that you can correctly convey your message in another language. Other consultations are also available to you for the successful development of your organization, for example, NGO.",
+        "price": "50",
+        "buttonName": "Consultants",
+        "illustration": "consult",
+        "teammates": [
+          {
+            "id": "70808681",
+            "recruit": false,
+            "labelName": "",
+            "title": "Stan Marinets",
+            "proff": "Interpreter",
+            "description": "Authorized translator in language pair Finnish-Russian, translator and interpreter in English-Finnish-Russian-Estonian, specialist in the NGO sphere.",
+            "isactivatedurl": true,
+            "url": "https://www.linkedin.com/mwlite/in/stanislav-marinets-665899100",
+            "avatar": {
+              "url": "https://www.datocms-assets.com/71846/1657974643-stan_marinets.jpg"
+            }
+          }
+        ]
+      },
+      {
+        "id": "64111448",
+        "active": true,
+        "order": 8,
+        "title": "Sound",
+        "description": "Dubbing can save any content and improve the quality and overall perception of the product. The right music track will create the right atmosphere for the video.",
+        "price": "150",
+        "buttonName": "Musician",
+        "illustration": "sound",
+        "teammates": [
+          {
+            "id": "70811636",
+            "recruit": false,
+            "labelName": "",
+            "title": "Tatiana Nedenko",
+            "proff": "Dubbing actor",
+            "description": "Voice-over, dubbing actor, voicing commercials, creating a voice story in Russian and English.",
+            "isactivatedurl": false,
+            "url": "",
+            "avatar": {
+              "url": "https://www.datocms-assets.com/71846/1663946208-79373640_2593834340835354_743595436077481984_n.webp"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "ourlittlestory": {
+    "title": "about us",
+    "description": "We find the right specialists for you and build favorable work teams. Our company has been engaged in networking for a long time, it is focused on dialogue with the staff, we can conduct interviews, as well as motivate the staff.\n\nTimaMih Tmi always acts in the customer's interest within the scope of its authority. The personnel of any company often leaves much to be desired, so large companies rely more and more often on recruitment services, because a good team is 75% of success.\n"
+  },
+  "getintouch": {
+    "title": "Contact us",
+    "description": "call or write to WhatsApp & Telegram.",
+    "copyText": "or you can copy",
+    "tunnus": "Company TimaMih Tmi is officially registered in Finland Y-tunnus 3123887-1 Alv rek.",
+    "contacts": [
+      {
+        "id": "19771951",
+        "icon": "telephone",
+        "url": "358453491091"
+      },
+      {
+        "id": "19771952",
+        "icon": "telegram",
+        "url": "timamih_com"
+      },
+      {
+        "id": "19771953",
+        "icon": "whatsapp",
+        "url": "358453491091"
+      },
+      {
+        "id": "76883121",
+        "icon": "instagram",
+        "url": "timamih_com"
+      }
+    ]
+  }
+}

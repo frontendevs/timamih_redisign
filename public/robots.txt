@@ -1,0 +1,16 @@
+# Company name - robots.txt
+# https://website.com/robots.txt
+
+# Allow all crawlers to access all content
+User-agent: *
+Allow: /
+
+# Crawl delay (optional, adjust if needed)
+# Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://website.com/sitemap.xml
+
+# Disallow specific paths (if any in the future)
+# Disallow: /admin/
+# Disallow: /private/

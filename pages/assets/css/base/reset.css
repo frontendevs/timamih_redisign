@@ -1,0 +1,172 @@
+/* Modern CSS Reset */
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Enable keyword animation (height: auto, display: none, etc.) */
+@media (prefers-reduced-motion: no-preference) {
+	html {
+		interpolate-size: allow-keywords;
+	}
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+figure,
+pre,
+dl,
+dd,
+ul,
+ol {
+	margin: 0;
+}
+
+img,
+video,
+canvas,
+svg {
+	max-inline-size: 100%;
+	block-size: auto;
+	display: block;
+}
+
+img,
+button {
+	user-select: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+input,
+textarea,
+select {
+	color: inherit;
+}
+
+input,
+textarea,
+button,
+select {
+	font: inherit;
+	letter-spacing: inherit;
+}
+
+select,
+button {
+	appearance: none;
+}
+
+button,
+fieldset {
+	border: none;
+}
+
+button {
+	cursor: pointer;
+	background: none;
+}
+
+ul,
+ol {
+	padding: 0;
+	list-style: none;
+}
+
+[popover] {
+	margin: 0;
+	padding: 0;
+	color: inherit;
+	border: none;
+	background: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-variant-numeric: lining-nums;
+	text-wrap: balance;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+p,
+figcaption {
+	font-variant-numeric: proportional-nums;
+	text-wrap: pretty;
+}
+
+p,
+blockquote,
+q,
+figcaption,
+li {
+	hanging-punctuation: first allow-end last;
+}
+
+blockquote {
+	hanging-punctuation: first last;
+}
+
+strong {
+	font-weight: var(--fw-600);
+}
+
+code {
+	font-variant-numeric: slashed-zero;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+abbr {
+	text-decoration: none;
+	font-variant-caps: all-small-caps;
+
+	&[title] {
+		text-decoration: underline dotted;
+		cursor: help;
+	}
+}
+
+sup,
+sub {
+	line-height: 0;
+}
+
+iframe {
+	border: none;
+}
+
+/* Global motion override — must be last to win specificity race */
+@media (prefers-reduced-motion: reduce) {
+	* {
+		transition: none !important;
+		animation: none !important;
+		scroll-behavior: auto !important;
+	}
+}

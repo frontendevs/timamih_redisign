@@ -1,0 +1,22 @@
+/* fonts.css — Rubik self-hosted @font-face
+ *
+ * Font files: /assets/fonts/Rubik-Regular.woff2, Rubik-Bold.woff2
+ * Files are placed in Step 4 (assets). Paths match the preload in head.ts.
+ * font-display: swap ensures text is visible while fonts load (FOUT over FOIT).
+ */
+
+@font-face {
+	font-family: "Rubik";
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	src: url("/assets/fonts/Rubik-Regular.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Rubik";
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+	src: url("/assets/fonts/Rubik-Bold.woff2") format("woff2");
+}

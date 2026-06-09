@@ -1,0 +1,28 @@
+/* core.css — shared CSS bundle, one <link> per page.
+ * @import is bundled by the build (Vite) into a single file — no request waterfall.
+ * Order = cascade order. Page-specific CSS loads as a second <link> after this.
+ */
+
+/* Base */
+@import "./base/fonts.css";
+@import "./base/tokens.css";
+@import "./base/reset.css";
+@import "./base/global.css";
+@import "./base/typography.css";
+
+/* Utils */
+@import "./utils/layout.css";
+@import "./utils/visually-hidden.css";
+@import "./utils/reveal.css";
+
+/* Components */
+@import "./components/button.css";
+@import "./components/badge.css";
+@import "./components/form.css";
+@import "./components/dialog.css";
+@import "./components/accordion.css";
+@import "./components/header.css";
+@import "./components/footer.css";
+@import "./components/nav-link.css";
+@import "./components/nav-drawer.css";
+@import "./components/toast.css";

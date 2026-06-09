@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="display: none;">
+  <symbol id="phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/>
+  </symbol>
+
+  <symbol id="mailbox" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M22 17a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9.5C2 7 4 5 6.5 5H18c2.2 0 4 1.8 4 4v8Z"/>
+    <polyline points="15,9 18,9 18,11"/>
+    <path d="M6.5 5C9 5 11 7 11 9.5V17a2 2 0 0 1-2 2"/>
+    <line x1="6" x2="7" y1="10" y2="10"/>
+  </symbol>
+
+  <symbol id="map-pinned" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M18 8c0 3.613-3.869 7.429-5.393 8.795a1 1 0 0 1-1.214 0C9.87 15.429 6 11.613 6 8a6 6 0 0 1 12 0"/>
+    <circle cx="12" cy="8" r="2"/>
+    <path d="M8.714 14h-3.71a1 1 0 0 0-.948.683l-2.004 6A1 1 0 0 0 3 22h18a1 1 0 0 0 .948-1.316l-2-6a1 1 0 0 0-.949-.684h-3.712"/>
+  </symbol>
+
+  <symbol id="map-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/>
+    <circle cx="12" cy="10" r="3"/>
+  </symbol>
+
+  <symbol id="building" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 10h.01"/>
+    <path d="M12 14h.01"/>
+    <path d="M12 6h.01"/>
+    <path d="M16 10h.01"/>
+    <path d="M16 14h.01"/>
+    <path d="M16 6h.01"/>
+    <path d="M8 10h.01"/>
+    <path d="M8 14h.01"/>
+    <path d="M8 6h.01"/>
+    <path d="M9 22v-3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v3"/>
+    <rect x="4" y="2" width="16" height="20" rx="2"/>
+  </symbol>
+
+  <symbol id="email" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/>
+    <rect x="2" y="4" width="20" height="16" rx="2"/>
+  </symbol>
+
+  <symbol id="id-card" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M16 10h2"/>
+    <path d="M16 14h2"/>
+    <path d="M6.17 15a3 3 0 0 1 5.66 0"/>
+    <circle cx="9" cy="11" r="2"/>
+    <rect x="2" y="5" width="20" height="14" rx="2"/>
+  </symbol>
+</svg>

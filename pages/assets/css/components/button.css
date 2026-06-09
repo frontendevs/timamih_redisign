@@ -1,0 +1,193 @@
+/* Button Component
+ * Usage:
+ *   <button class="button button-primary">Label</button>
+ *   <button class="button button-primary" data-state="loading">Label</button>
+ *   <a class="button button-secondary" href="...">Label</a>
+ *   <button class="ibutton" aria-label="..."><svg class="icon" aria-hidden="true">...</svg></button>
+ *
+ * Modifiers:  button-primary | button-secondary | button-ghost
+ *
+ * Loading state:
+ *   Add data-state="loading" — text becomes invisible, spinner appears.
+ *   Each modifier sets --_btn-loader-color for correct spinner contrast.
+ *
+ * Disabled state:
+ *   Native <button>: [disabled] — handles keyboard + tab-order automatically.
+ *   Non-native <a>: aria-disabled="true" + tabindex="-1" + JS preventDefault (or drop href).
+ *   pointer-events:none alone blocks mouse only, not keyboard activation.
+ */
+
+a.button {
+	text-decoration: none;
+}
+
+:is(.button, .ibutton):disabled,
+:is(.button, .ibutton).is-disabled[aria-disabled="true"] {
+	opacity: 0.5;
+	cursor: not-allowed;
+	pointer-events: none;
+}
+
+.button {
+	--_btn-loader-color: var(--interactive); /* safe default; variants override */
+
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: var(--space-6);
+	padding: var(--btn-padding, var(--space-8) var(--space-20));
+	font-size: var(--btn-font-size, var(--font-label-size));
+	font-weight: var(--fw-600);
+	line-height: var(--btn-line-height, var(--font-label-lh));
+	letter-spacing: 0.03em;
+	text-align: center;
+	border-width: 1.5px;
+	border-style: solid;
+	border-radius: var(--btn-radius, var(--radius-8));
+	transition:
+		background-color var(--transition-normal),
+		border-color var(--transition-normal),
+		color var(--transition-normal);
+	cursor: pointer;
+	user-select: none;
+	text-wrap: nowrap;
+}
+
+/* ── Loading state ────────────────────────────────────────────── */
+/* --_btn-loader-color: base default --interactive; each modifier overrides */
+
+.button[data-state="loading"] {
+	position: relative;
+	color: transparent;
+	pointer-events: none;
+
+	&::after {
+		inline-size: 1em;
+		block-size: 1em;
+		position: absolute;
+		inset: 0;
+		margin: auto;
+		border: 2px solid transparent;
+		border-radius: 50%;
+		animation: btn-spin 0.7s linear infinite;
+		content: "";
+		border-block-start-color: var(--_btn-loader-color, currentColor);
+	}
+}
+
+@keyframes btn-spin {
+	to {
+		rotate: 1turn;
+	}
+}
+
+/* ── Modifiers ────────────────────────────────────────────────── */
+
+/* Filled — highest priority CTA */
+.button-primary {
+	--_btn-loader-color: var(--accent-text);
+
+	color: var(--accent-text);
+	background-color: var(--accent);
+	border-color: var(--accent);
+
+	@media (hover: hover) {
+		&:hover {
+			background-color: var(--accent-hover);
+			border-color: var(--accent-hover);
+		}
+	}
+
+	&:active {
+		background-color: var(--accent-active);
+		border-color: var(--accent-active);
+	}
+}
+
+/* Outlined — secondary action */
+.button-secondary {
+	--_btn-loader-color: var(--text-muted);
+
+	color: var(--interactive);
+	background-color: transparent;
+	border-color: var(--border-strong);
+
+	@media (hover: hover) {
+		&:hover {
+			background-color: oklch(from var(--accent) l c h / 0.08);
+			border-color: var(--interactive-hover);
+		}
+	}
+
+	&:active {
+		background-color: oklch(from var(--accent) l c h / 0.15);
+		border-color: var(--interactive-active);
+	}
+}
+
+/* Ghost — no border, low-emphasis action */
+.button-ghost {
+	--_btn-loader-color: var(--accent);
+
+	color: var(--interactive);
+	border-color: transparent;
+
+	@media (hover: hover) {
+		&:hover {
+			border-color: var(--border);
+		}
+	}
+
+	&:active {
+		background-color: oklch(from var(--accent) l c h / 0.1);
+		border-color: var(--border-strong);
+	}
+}
+
+/* ── Icon-only button ─────────────────────────────────────────── */
+/* Hit target = the element itself (--ibtn-hit-size). WCAG 2.5.8 (AA) minimum is
+ * 24×24 CSS px; 2.75rem (~44px) is the house touch target (matches 2.5.5 AAA enhanced).
+ * Visual surface is a smaller ::before (--ibtn-visual-size) — never invert this
+ * (a hidden ::after hit-area breaks focus ring + can overlap neighbours). */
+
+.ibutton {
+	--ibtn-hit-size: 2.75rem;
+	--ibtn-visual-size: 2rem;
+	--icon-size: var(--ibtn-icon-size, 1rem); /* cascades to the .icon inside */
+	inline-size: var(--ibtn-hit-size);
+	aspect-ratio: 1;
+	display: grid;
+	place-content: center;
+
+	position: relative;
+	color: var(--ibtn-color, var(--interactive));
+	cursor: pointer;
+	user-select: none;
+
+	/* Visual surface — smaller than the hit target */
+	&::before {
+		position: absolute;
+		inset: calc((var(--ibtn-hit-size) - var(--ibtn-visual-size)) / 2);
+		background-color: var(--ibtn-bg, transparent);
+		border: 1.5px solid var(--ibtn-border-color, transparent);
+		border-radius: var(--ibtn-radius, var(--btn-radius, var(--radius-8)));
+		transition: background-color var(--transition-fast);
+		content: "";
+	}
+
+	/* Icon above the surface */
+	& .icon {
+		position: relative;
+		z-index: 1;
+	}
+
+	@media (hover: hover) {
+		&:hover::before {
+			background-color: var(--bg-muted);
+		}
+	}
+
+	&:active::before {
+		background-color: var(--bg-subtle);
+	}
+}

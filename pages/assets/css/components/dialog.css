@@ -1,0 +1,95 @@
+/* Dialog Component — native HTML <dialog>
+ * Generic shell only: surface, parts, animation, scroll-lock. Closing happens
+ * THROUGH THE CONTENT (action buttons) — no top-corner × in the base contract.
+ * Usage:
+ *   <dialog class="dialog" id="result" aria-labelledby="result-title">
+ *     <form method="dialog">
+ *       <h2 class="dialog-title" id="result-title">Request sent</h2>
+ *       <p class="dialog-text">We will contact you shortly.</p>
+ *       <div class="dialog-actions">
+ *         <button class="button button-primary" value="ok">OK</button>
+ *       </div>
+ *     </form>
+ *   </dialog>
+ *
+ * Close contract:
+ *   — A SUBMIT button inside <form method="dialog"> closes natively (no JS) and sets
+ *     dialog.returnValue to the button's value (e.g. confirm: Cancel / Delete). A bare
+ *     <button> defaults to type=submit; <button type="button"> needs JS dialog.close().
+ *   — Custom logic: JS dialog.close() (e.g. data-js-action="close-dialog").
+ *   — Top-corner × is container chrome (nav-drawer, side panel, fullscreen/long modal),
+ *     NOT a base-dialog default — add it locally where that chrome belongs.
+ *   Open: dialog.showModal().
+ *
+ * Animation: base holds the VISIBLE state + transition; :not([open]) is the closed/exit
+ *   state; [open] @starting-style is the enter-from. Both directions animate (mirrors
+ *   nav-drawer). @starting-style + allow-discrete — Chrome 116+, Firefox 129+.
+ */
+
+.dialog {
+	max-inline-size: min(90vw, var(--dialog-max-width, 600px));
+	max-block-size: 90dvh;
+	margin: auto; /* native modal centering — no position:fixed + inset hack */
+	padding: var(--space-24);
+	overflow: auto;
+
+	/* Visible state + transition (kept on base so exit animates too) */
+	opacity: 1;
+	color: var(--text);
+	background-color: var(--bg-surface);
+	border: none;
+	border-radius: var(--dialog-radius, var(--radius-12));
+	translate: 0 0;
+	scale: 1;
+	transition:
+		opacity var(--transition-normal),
+		scale var(--transition-normal),
+		translate var(--transition-normal),
+		display var(--transition-normal) allow-discrete,
+		overlay var(--transition-normal) allow-discrete;
+
+	/* Closed / exit state */
+	&:not([open]) {
+		opacity: 0;
+		translate: 0 1rem;
+		scale: 0.95;
+	}
+
+	/* Enter-from */
+	&[open] {
+		@starting-style {
+			opacity: 0;
+			translate: 0 1rem;
+			scale: 0.95;
+		}
+	}
+
+	&::backdrop {
+		background-color: var(--overlay);
+	}
+}
+
+/* ── Parts ────────────────────────────────────────────────────── */
+
+.dialog-title {
+	font-size: var(--font-22);
+	letter-spacing: var(--ls-tight);
+}
+
+.dialog-text {
+	color: var(--text-muted);
+}
+
+.dialog-actions {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	gap: var(--space-12);
+	margin-block-start: var(--space-24);
+}
+
+/* ── Scroll lock ──────────────────────────────────────────────── */
+/* showModal() makes the background inert but doesn't lock body scroll. */
+html:has(.dialog[open]) {
+	overflow: hidden;
+}

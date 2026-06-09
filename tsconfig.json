@@ -1,0 +1,100 @@
+{
+	"compilerOptions": {
+		// ── Output target ──────────────────────────────────────────────────────
+		// ESNext: Vite handles transpilation, TS only type-checks.
+		"target": "ESNext",
+
+		// ── Module system ──────────────────────────────────────────────────────
+		// ESNext: native ES modules throughout.
+		"module": "ESNext",
+
+		// bundler: optimized for Vite/esbuild — supports exports/imports fields,
+		// allows extensionless imports, no require() assumption.
+		// Replaces legacy "node16" / "nodenext" for bundler setups.
+		"moduleResolution": "bundler",
+
+		// Allow explicit .ts in import specifiers (Vite resolves them; type-check only, noEmit).
+		"allowImportingTsExtensions": true,
+
+		// ── Type sources ───────────────────────────────────────────────────────
+		// dom + dom.iterable: browser APIs.
+		// esnext: latest JS built-ins (structuredClone, Array.fromAsync etc.).
+		"lib": ["dom", "dom.iterable", "esnext"],
+
+		// ── Strict mode ────────────────────────────────────────────────────────
+		// Enables: strictNullChecks, strictFunctionTypes, strictBindCallApply,
+		//          strictPropertyInitialization, noImplicitAny, noImplicitThis,
+		//          alwaysStrict, useUnknownInCatchVariables.
+		"strict": true,
+
+		// arr[i] and obj[key] return T | undefined, not T.
+		// Forces explicit undefined handling at access sites.
+		"noUncheckedIndexedAccess": true,
+
+		// { a?: string } means string, not string | undefined.
+		// Prevents accidental undefined propagation through optional fields.
+		"exactOptionalPropertyTypes": true,
+
+		// Side-effect imports (import './polyfill') are type-checked.
+		// Catches typos in bare imports that TS would otherwise silently ignore.
+		// New in TS 5.6.
+		"noUncheckedSideEffectImports": true,
+
+		// ── Emit ───────────────────────────────────────────────────────────────
+		// Vite handles all emit. TS is type-check only.
+		"noEmit": true,
+
+		// Source maps for browser devtools and error stack traces.
+		"sourceMap": true,
+
+		// ── Interop ────────────────────────────────────────────────────────────
+		// esModuleInterop: default true in TS 6 — explicit declaration kept for
+		// clarity and older tooling compatibility.
+		"esModuleInterop": true,
+
+		// import data from './config.json' — typed object, no require().
+		"resolveJsonModule": true,
+
+		// Each file is transformed independently (esbuild, SWC).
+		// Disallows: const enum (inlined by tsc only), namespace merging.
+		"isolatedModules": true,
+
+		// ── Performance ────────────────────────────────────────────────────────
+		// Incremental: cache .tsbuildinfo for faster subsequent type checks.
+		// Default false unless composite is set — explicit here for clarity.
+		"incremental": true,
+
+		// Skip type-checking .d.ts files in node_modules.
+		// Safe: library types are the library's responsibility.
+		"skipLibCheck": true,
+
+		// ── Code quality ───────────────────────────────────────────────────────
+		// Windows/Linux import casing mismatch → runtime crash on case-sensitive FS.
+		"forceConsistentCasingInFileNames": true,
+
+		// switch (x) { case 'a': doA(); case 'b': ... } — missing break is a bug.
+		"noFallthroughCasesInSwitch": true,
+
+		// Unused local variables → error. Keeps codebase clean.
+		// Pair with oxlint no-unused-vars for JS files.
+		"noUnusedLocals": true,
+
+		// Unused function parameters → error.
+		// Prefix with _ to explicitly mark intentional unused params: _event.
+		"noUnusedParameters": true,
+
+		// ── Path aliases ───────────────────────────────────────────────────────
+		// Must match vite.config.ts resolve.alias exactly.
+		// Project-specific: adjust paths per project structure.
+		"paths": {
+			"@assets/*": ["./pages/assets/*"],
+			"@shared/*": ["./pages/shared/*"]
+		}
+	},
+
+	// Type-check pages/ source and vite config (Node.js types needed there).
+	// Adjust glob if project structure differs.
+	"include": ["pages/**/*", "vite.config.ts", "plugins/*.ts"],
+
+	"exclude": ["node_modules", "dist"]
+}

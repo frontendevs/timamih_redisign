@@ -1,0 +1,182 @@
+{
+	"$schema": "https://raw.githubusercontent.com/oxc-project/oxc/main/crates/oxc_linter/schema/oxlint_config.json",
+
+	// Template: mpa-nunjucks
+	// Stack: Vite · Nunjucks · TypeScript · Vanilla JS · No framework
+	//
+	// Removing a rule? Leave a comment: why it doesn't apply to this project.
+	// Adding a rule? Link to the gotcha or convention it enforces.
+
+	// ─── Environment ─────────────────────────────────────────────────────────────
+	// Node-only project → remove "browser". Mixed → keep both.
+	"env": {
+		"browser": true,
+		"es2022": true
+	},
+
+	// ─── Globals ─────────────────────────────────────────────────────────────────
+	// Framework globals go here (e.g. "React": "readonly" for React projects).
+	"globals": {
+		"NodeJS": "readonly",
+		"HTMLElement": "readonly",
+		// Node.js — used in plugin scripts (find-dead-css.ts, optimize-images.ts)
+		"process": "readonly"
+	},
+
+	"rules": {
+		// ════════════════════════════════════════════════════════════════════════
+		// CORRECTNESS — catch real bugs
+		// ════════════════════════════════════════════════════════════════════════
+
+		// Catch undeclared identifiers — typo protection.
+		"no-undef": "error",
+
+		// Dead code elimination.
+		"no-unused-vars": "error",
+
+		// == is a footgun. Always ===.
+		"eqeqeq": "error",
+
+		// var has function scope — breaks in loops, async code.
+		"no-var": "error",
+
+		// Code after return/throw/break is never executed.
+		"no-unreachable": "error",
+
+		// Async promise executor masks errors — Promise constructor already catches sync throws.
+		"no-async-promise-executor": "error",
+
+		// Prevents overwriting imported bindings.
+		"no-import-assign": "error",
+
+		// ════════════════════════════════════════════════════════════════════════
+		// TYPESCRIPT — type safety conventions (owner skill: typescript)
+		// ════════════════════════════════════════════════════════════════════════
+
+		// unknown + guard over any — keeps type narrowing intact.
+		// See skill: typescript
+		"no-explicit-any": "warn",
+
+		// ! operator skips null check — use optional chaining or guard.
+		"no-non-null-assertion": "warn",
+
+		// import type → erased at compile time, no runtime cost.
+		// Matches tsconfig "useImportType" intent.
+		"consistent-type-imports": "warn",
+
+		// as T when TS already knows the type — redundant noise.
+		"no-unnecessary-type-assertion": "warn",
+
+		// as T narrowing to a wider type is unsafe — use satisfies or guard.
+		"no-unsafe-type-assertion": "warn",
+
+		// Promise returned from async fn must be awaited — stale response risk.
+		// Covers skill async: stale response
+		"no-floating-promises": "error",
+
+		// await on non-Promise is a logic error.
+		"await-thenable": "error",
+
+		// async function without await — likely forgot to await something.
+		"require-await": "warn",
+
+		// Exhaustive switch for discriminated unions.
+		// Covers skill typescript: switch over else-if for value sets.
+		"switch-exhaustiveness-check": "warn",
+
+		// ════════════════════════════════════════════════════════════════════════
+		// CODE PATTERNS — automatable gotchas from skills
+		// ════════════════════════════════════════════════════════════════════════
+
+		// [typescript] function inside guard block hoists above the guard →
+		// TypeScript can't narrow the type inside it.
+		// Use: const fn = () => {} declared after the guard.
+		"no-inner-declarations": "error",
+
+		// [flow] else after return is redundant — flattens if/else chains.
+		// Partial coverage of "guard-only early return" convention.
+		"no-else-return": "warn",
+
+		// Signals immutability at declaration — default to const.
+		"prefer-const": "error",
+
+		// for...of over indexed loops — cleaner, no off-by-one.
+		"prefer-for-of": "warn",
+
+		// Optional chaining over manual && null checks.
+		"prefer-optional-chain": "warn",
+
+		// ?? over || for nullish checks — || swallows 0 and "".
+		"prefer-nullish-coalescing": "warn",
+
+		// ════════════════════════════════════════════════════════════════════════
+		// ARRAYS — platform-idiomatic patterns
+		// ════════════════════════════════════════════════════════════════════════
+
+		// array.flat().map() → array.flatMap() — one less intermediate array.
+		"prefer-array-flat-map": "warn",
+
+		// array.filter().find() → array.find() — short-circuits earlier.
+		"prefer-find": "warn",
+
+		// array.includes() over indexOf — intent is clearer.
+		"prefer-includes": "warn",
+
+		// NOTE: Array.from(list).map(fn) → Array.from(list, fn) has no oxlint rule yet.
+
+		// ════════════════════════════════════════════════════════════════════════
+		// SECURITY (owner skill: security)
+		// ════════════════════════════════════════════════════════════════════════
+
+		// eval executes arbitrary strings — XSS vector.
+		"no-eval": "error",
+
+		// implied eval via setTimeout("string") — same risk.
+		"no-implied-eval": "error",
+
+		// auth/session cookies → server-set HttpOnly only; client preference cookies
+		// (e.g. consent) → local oxlint-disable with a reason. See skill: security.
+		"no-document-cookie": "error",
+
+		// ════════════════════════════════════════════════════════════════════════
+		// DOM / EVENTS (owner skill: dom-contract)
+		// ════════════════════════════════════════════════════════════════════════
+
+		// removeEventListener with inline arrow always fails — reference must match.
+		// Use named function or AbortController signal.
+		"no-invalid-remove-event-listener": "error",
+
+		// ════════════════════════════════════════════════════════════════════════
+		// DX — developer experience, non-blocking
+		// ════════════════════════════════════════════════════════════════════════
+
+		// Remove before ship. Use a logger abstraction in production.
+		"no-console": "warn",
+
+		// debugger left in code — always accidental.
+		"no-debugger": "error",
+
+		// alert/confirm/prompt block the main thread.
+		"no-alert": "error"
+	},
+
+	// ─── Ignore Patterns ─────────────────────────────────────────────────────────
+	// vite.config.ts / playwright.config.ts — Node.js context, not browser.
+	// plugins/*.ts — Node.js CLI scripts (vite-node), intentional console output.
+	// plugins/*.js — stylelint custom plugins; excluded from browser app lint.
+	"ignorePatterns": [
+		"node_modules",
+		"dist",
+		"coverage",
+		"vendor",
+		"public",
+		"storage",
+		"**/*.min.js",
+		"vite.config.ts",
+		"playwright.config.ts",
+		"plugins/*.ts",
+		"plugins/*.js",
+		"plugins/*.mjs",
+		"plugins/**/*.ts"
+	]
+}

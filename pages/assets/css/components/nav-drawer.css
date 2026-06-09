@@ -1,0 +1,212 @@
+/* Nav Drawer — mobile navigation via native <dialog>
+ * For complex MPA/ecommerce nav (6+ items: catalog/account/secondary). For 3-4 primary
+ * actions prefer visible nav / bottom-nav — don't make the drawer the only way to navigate.
+ *
+ * Usage:
+ *   <dialog class="nav-drawer" id="nav-drawer" aria-label="Navigation">
+ *     <div class="nav-drawer-header">
+ *       <button class="ibutton nav-drawer-close" aria-label="Close menu">
+ *         <svg class="icon" aria-hidden="true">...</svg>
+ *       </button>
+ *     </div>
+ *     <nav class="nav-drawer-nav">
+ *       <ul class="nav-drawer-list">
+ *         <li><a class="nav-drawer-link" href="/" aria-current="page">Home</a></li>
+ *       </ul>
+ *     </nav>
+ *   </dialog>
+ *
+ * JS contract (island):
+ *   — trigger: aria-controls="nav-drawer", toggles aria-expanded.
+ *   — open: dialog.showModal(); aria-expanded=true.
+ *   — close: close button / link click / backdrop click / Escape (native close event).
+ *   — on close: aria-expanded=false; return focus to the trigger.
+ *   — desktop/container breakpoint: if open, close it — else the page stays inert and
+ *     scroll-locked (html:has([open])) after switching to a layout without the drawer.
+ *
+ * Side: data-side="right" slides in from the right (default: left).
+ * Width: --nav-drawer-width (default 75vw).
+ *
+ * Animation: base holds the visible state + transition; :not([open]) is the exit state;
+ *   [open] @starting-style is the enter-from. allow-discrete keeps it in the top-layer
+ *   through the exit transition. (Same pattern as dialog.css.)
+ *
+ * Desktop: drawer hidden via container query on the trigger button
+ *   (container-type: inline-size; container-name: header on the header).
+ */
+
+/* ── Scroll lock ──────────────────────────────────────────────── */
+
+html:has(.nav-drawer[open]) {
+	overflow: hidden;
+}
+
+/* ── Dialog shell ─────────────────────────────────────────────── */
+
+.nav-drawer {
+	inline-size: var(--nav-drawer-width, 75vw);
+	block-size: 100dvh;
+	display: grid;
+	grid-template-rows: auto 1fr;
+	position: fixed;
+	inset-block: 0;
+	inset-inline-start: 0;
+	margin: 0;
+	padding: 0;
+	opacity: 1; /* visible state */
+	color: inherit;
+	background-color: var(--bg-surface);
+	border: none;
+	transform: translateX(0);
+	transition:
+		opacity var(--transition-normal),
+		transform var(--transition-normal),
+		overlay var(--transition-normal) allow-discrete,
+		display var(--transition-normal) allow-discrete;
+
+	/* Exit state — opacity+transform while the dialog stays in the top-layer */
+	&:not([open]) {
+		opacity: 0;
+		transform: translateX(-100%);
+	}
+
+	/* Enter-from */
+	&[open] {
+		@starting-style {
+			opacity: 0;
+			transform: translateX(-100%);
+		}
+	}
+
+	&::backdrop {
+		opacity: 1;
+		background-color: oklch(from var(--bg) l c h / 0.25);
+		-webkit-backdrop-filter: blur(20px);
+		backdrop-filter: blur(20px);
+		transition:
+			opacity var(--transition-normal),
+			overlay var(--transition-normal) allow-discrete,
+			display var(--transition-normal) allow-discrete;
+
+		@starting-style {
+			opacity: 0;
+		}
+	}
+
+	&:not([open])::backdrop {
+		opacity: 0;
+	}
+}
+
+/* Right-side variant */
+.nav-drawer[data-side="right"] {
+	inset-inline-start: auto;
+	inset-inline-end: 0;
+
+	&:not([open]) {
+		transform: translateX(100%);
+	}
+
+	&[open] {
+		@starting-style {
+			transform: translateX(100%);
+		}
+	}
+}
+
+/* ── Header row ───────────────────────────────────────────────── */
+
+.nav-drawer-header {
+	display: flex;
+	align-items: center;
+	padding: var(--space-12) var(--space-20);
+	border-block-end: 1.5px solid oklch(from var(--border) l c h / 0.5);
+}
+
+/* ── Close button — composes .ibutton; only drawer-specific chrome here ──── */
+
+.nav-drawer-close {
+	--ibtn-color: var(--text-muted);
+}
+
+/* ── Nav list ─────────────────────────────────────────────────── */
+
+.nav-drawer-nav {
+	display: grid;
+	align-content: start;
+	padding-block: var(--space-8);
+	overflow-y: auto;
+}
+
+.nav-drawer-link {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: var(--space-16);
+	position: relative;
+	padding: var(--space-16) var(--space-24);
+	font-size: var(--font-15);
+	font-weight: var(--fw-500);
+	letter-spacing: 0.03em;
+	text-decoration: none;
+	color: oklch(from var(--text) l c h / 0.72);
+	border-block-end: 1.5px solid oklch(from var(--border) l c h / 0.5);
+	transition:
+		color var(--transition-fast),
+		background-color var(--transition-fast);
+
+	/* Last link in the list drops its divider */
+	.nav-drawer-list > li:last-child & {
+		border-block-end: none;
+	}
+
+	/* Left-edge active indicator */
+	&::before {
+		inline-size: 2px;
+		position: absolute;
+		inset-block: 0;
+		inset-inline-start: 0;
+		background-color: var(--accent);
+		transform: scaleY(0);
+		transition: transform var(--transition-fast);
+		content: "";
+		transform-origin: center;
+	}
+
+	/* Icon inside link */
+	& .icon {
+		flex-shrink: 0;
+		opacity: 0.45;
+		color: var(--text-muted);
+		transition:
+			opacity var(--transition-fast),
+			transform var(--transition-fast),
+			color var(--transition-fast);
+	}
+
+	/* Active page */
+	&[aria-current="page"] {
+		color: var(--text);
+	}
+
+	&[aria-current="page"]::before {
+		transform: scaleY(1);
+	}
+
+	@media (hover: hover) {
+		&:hover {
+			color: var(--text);
+			background-color: oklch(from var(--accent) l c h / 0.06);
+
+			&::before {
+				transform: scaleY(1);
+			}
+
+			& .icon {
+				opacity: 1;
+				color: var(--accent);
+				transform: translateX(var(--space-4));
+			}
+		}
+	}
+}

@@ -1,0 +1,24 @@
+/* Scroll Reveal — optional enter animation, JS-gated.
+ *
+ * Content is hidden ONLY while the island is live: scrollReveal.ts sets
+ * body[data-reveal-ready] before observing, and only when motion is allowed.
+ * If the island doesn't run — JS off, chunk failed, island not wired, or
+ * reduced-motion — nothing is hidden and content shows normally. CSS never
+ * hides content without proof the reveal JS is alive.
+ *
+ * Usage:  <div class="a-reveal">…</div>
+ * Wiring: shared/ui/scrollReveal.ts (ship both or neither).
+ */
+
+body[data-reveal-ready] .a-reveal {
+	opacity: 0;
+	translate: 0 1rem;
+	transition:
+		opacity 0.4s ease,
+		translate 0.4s ease;
+}
+
+body[data-reveal-ready] .a-reveal.is-visible {
+	opacity: 1;
+	translate: 0 0;
+}

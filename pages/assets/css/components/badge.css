@@ -1,0 +1,164 @@
+/* Badge / Tag / Status Pill
+ *
+ * Generic component primitives:
+ *
+ * 1. .status-pill - floating glass label, hidden until .is-visible (JS reveals over animation).
+ *      <div class="status-pill is-visible" aria-hidden="true"><span><svg class="icon">...</svg> Label</span></div>
+ *      Non-interactive (pointer-events:none). Decorative → aria-hidden; if it conveys
+ *      real status, use role/aria-live instead and don't hide via opacity alone.
+ *      Overlay positioning (position + z-index) belongs to the usage context.
+ *
+ * 2. .badge - inline label chip.
+ *      <span class="badge badge-muted">SAE 5W-30</span>
+ *      Modifiers: .badge-accent | .badge-alt | .badge-muted | .badge-line
+ *      .badge-line reads --line-color from the nearest product/card context.
+ *
+ * 3. .tag - compact inline UI chip.
+ *      <span class="tag tag-accent">Key</span>
+ *      Modifiers: .tag-accent | .tag-line | .tag-subtle
+ */
+
+/* Status Pill */
+
+.status-pill {
+	--icon-size: 0.825rem; /* local override of the global icon size */
+
+	display: grid;
+	place-items: center;
+	padding: var(--space-6) var(--space-12);
+	opacity: 0;
+	font-size: var(--font-11);
+	white-space: nowrap;
+	color: var(--accent-hover);
+	background-color: oklch(from var(--accent-muted) l c h / 0.6);
+	border: 1.5px solid oklch(from var(--accent) l c h / 0.3);
+	border-radius: var(--radius-12);
+	backdrop-filter: blur(16px);
+	transition: opacity 0.35s ease;
+	pointer-events: none; /* decorative overlay label — never blocks clicks */
+
+	& > span {
+		display: inline-flex;
+		grid-area: 1 / 1;
+		align-items: center;
+		gap: var(--space-6);
+	}
+
+	/* size via --icon-size (global contract); stroke-icon assumptions kept local */
+	& .icon {
+		flex-shrink: 0;
+		color: var(--accent-hover);
+		fill: none;
+		stroke-width: 2;
+	}
+}
+
+.status-pill.is-visible {
+	opacity: 1;
+}
+
+/* Badge */
+
+.badge {
+	--badge-color: var(--accent);
+	--badge-bg: var(--accent-bg-subtle);
+	--badge-border: oklch(from var(--accent) l c h / 0.25);
+	--badge-gap: var(--space-6);
+	--badge-padding-block: var(--space-6) var(--space-4);
+	--badge-padding-inline: var(--space-10);
+	--badge-font-size: var(--font-11);
+	--badge-radius: var(--radius-6);
+	--icon-size: var(--badge-icon-size, 0.875em);
+
+	inline-size: fit-content;
+	display: inline-flex;
+	align-items: center;
+	gap: var(--badge-gap);
+	padding-block: var(--badge-padding-block);
+	padding-inline: var(--badge-padding-inline);
+	font-size: var(--badge-font-size);
+	font-weight: var(--fw-500);
+	line-height: var(--lh-100);
+	letter-spacing: var(--ls-wider);
+	text-transform: uppercase;
+	white-space: nowrap;
+	color: var(--badge-color);
+	background-color: var(--badge-bg);
+	border: 1.5px solid var(--badge-border);
+	border-radius: var(--badge-radius);
+}
+
+.badge-accent {
+	--badge-color: var(--accent);
+	--badge-bg: var(--accent-bg-subtle);
+	--badge-border: oklch(from var(--accent) l c h / 0.25);
+}
+
+.badge-alt {
+	--badge-color: var(--alt, var(--accent));
+	--badge-bg: var(--alt-bg-subtle, var(--accent-bg-subtle));
+	--badge-border: var(--alt-border, var(--accent-border));
+}
+
+.badge-muted {
+	--badge-color: var(--text-subtle);
+	--badge-bg: oklch(from var(--text-subtle) l c h / 0.08);
+	--badge-border: oklch(from var(--text-subtle) l c h / 0.18);
+}
+
+.badge-line {
+	--badge-color: var(--line-color, var(--accent));
+	--badge-bg: oklch(from var(--line-color, var(--accent)) l c h / 0.15);
+	--badge-border: oklch(from var(--line-color, var(--accent)) l c h / 0.25);
+}
+
+/* Tag */
+
+.tag {
+	--tag-color: var(--text-subtle);
+	--tag-bg: oklch(from var(--text-subtle) l c h / 0.08);
+	--tag-border: oklch(from var(--text-subtle) l c h / 0.18);
+	--tag-gap: var(--space-4);
+	--tag-padding-block: var(--space-4);
+	--tag-padding-inline: var(--space-8);
+	--tag-font-size: var(--font-10);
+	--tag-radius: var(--radius-4);
+	--icon-size: var(--tag-icon-size, 0.875em);
+
+	inline-size: fit-content;
+	display: inline-flex;
+	align-items: center;
+	gap: var(--tag-gap);
+	padding-block: var(--tag-padding-block);
+	padding-inline: var(--tag-padding-inline);
+	font-size: var(--tag-font-size);
+	line-height: var(--lh-100);
+	letter-spacing: var(--ls-widest);
+	text-transform: uppercase;
+	color: var(--tag-color);
+	background-color: var(--tag-bg);
+	border: 1.5px solid var(--tag-border);
+	border-radius: var(--tag-radius);
+}
+
+.tag-accent {
+	--tag-color: var(--accent);
+	--tag-bg: oklch(from var(--accent) l c h / 0.1);
+	--tag-border: oklch(from var(--accent) l c h / 0.25);
+}
+
+.tag-line {
+	--tag-color: var(--line-color, var(--accent));
+	--tag-bg: oklch(from var(--line-color, var(--accent)) l c h / 0.15);
+	--tag-border: oklch(from var(--line-color, var(--accent)) l c h / 0.25);
+
+	font-family: var(--font-mono);
+}
+
+.tag-subtle {
+	--tag-color: var(--text-subtle);
+	--tag-bg: oklch(from var(--text-subtle) l c h / 0.08);
+	--tag-border: oklch(from var(--text-subtle) l c h / 0.18);
+
+	font-family: var(--font-mono);
+}

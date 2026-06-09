@@ -1,0 +1,67 @@
+/* Nav link — inline UI navigation (header nav, footer nav, breadcrumb, meta).
+ * UI-link, not a text link: no VISIBLE underline at rest (the nav context signals
+ * clickability); the underline is present-but-transparent and fades in on hover /
+ * current (so the transition is real, not a toggle). Inline text links live in
+ * typography.css (.link — always underlined, WCAG 1.4.1). Menu-style navigation
+ * (nav-drawer) is a separate component, not a .nav-link variant.
+ *
+ * Tune via local custom properties: --nav-link-color, --nav-link-hover, --nav-link-gap,
+ * --nav-link-weight. Variants only set props —
+ * do NOT create per-container .header-link / .footer-link. footer = .nav-link-subtle;
+ * header chrome (pill/dropdown/active shape) → local .header-nav-link on top of .nav-link.
+ *
+ * Usage:
+ *   <a class="nav-link" href="/about">About</a>
+ *   <a class="nav-link nav-link-strong" href="/catalog" aria-current="page">Catalog</a>
+ *   <a class="nav-link nav-link-subtle" href="/policy">Policy</a>          (footer / meta)
+ *   <a class="nav-link nav-link-icon" href="/account"><svg class="icon"/> Account</a>
+ */
+
+.nav-link {
+	--nav-link-color: var(--interactive);
+	--nav-link-hover: var(--accent);
+	--nav-link-gap: var(--space-6);
+	--nav-link-weight: inherit;
+
+	display: inline-flex;
+	align-items: center;
+	gap: var(--nav-link-gap);
+	font-weight: var(--nav-link-weight);
+	color: var(--nav-link-color);
+	transition:
+		color var(--transition-fast),
+		text-decoration-color var(--transition-fast);
+	text-decoration-line: underline;
+	text-decoration-color: transparent; /* invisible at rest; fades in on hover / current */
+	text-underline-offset: 3px;
+
+	@media (hover: hover) {
+		&:hover {
+			color: var(--nav-link-hover);
+			text-decoration-color: currentColor;
+		}
+	}
+
+	/* Current page shares the variant's active color (follows --nav-link-hover) */
+	&[aria-current="page"] {
+		color: var(--nav-link-hover);
+		text-decoration-color: currentColor;
+	}
+}
+
+/* Subtle — footer / meta navigation */
+.nav-link-subtle {
+	--nav-link-color: var(--text-muted);
+	--nav-link-hover: var(--text);
+}
+
+/* Strong — header / primary nav (more weight) */
+.nav-link-strong {
+	--nav-link-color: var(--text);
+	--nav-link-weight: var(--fw-500);
+}
+
+/* Icon — wider gap for inline icon + label */
+.nav-link-icon {
+	--nav-link-gap: var(--space-8);
+}
