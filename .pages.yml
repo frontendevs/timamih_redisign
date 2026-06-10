@@ -53,13 +53,14 @@ content:
     path: content/en/hero.json
     fields:
       - { name: label, label: Label, type: string }
-      - { name: title, label: Title (comma-separated lines), type: string }
+      - { name: title, label: "Title (comma-separated lines)", type: string }
       - { name: description, label: Description, type: string }
       - { name: playButton, label: Play button label, type: string }
       - { name: mainVideoUrl, label: YouTube embed URL, type: string }
       - name: chat
         label: Chat messages
-        type: list
+        type: object
+        list: true
         fields:
           - { name: id, label: ID, type: string }
           - { name: message, label: Message, type: string }
@@ -70,13 +71,14 @@ content:
     path: content/ru/hero.json
     fields:
       - { name: label, label: Label, type: string }
-      - { name: title, label: Title (comma-separated lines), type: string }
+      - { name: title, label: "Title (comma-separated lines)", type: string }
       - { name: description, label: Description, type: string }
       - { name: playButton, label: Play button label, type: string }
       - { name: mainVideoUrl, label: YouTube embed URL, type: string }
       - name: chat
         label: Chat messages
-        type: list
+        type: object
+        list: true
         fields:
           - { name: id, label: ID, type: string }
           - { name: message, label: Message, type: string }
@@ -87,13 +89,14 @@ content:
     path: content/fi/hero.json
     fields:
       - { name: label, label: Label, type: string }
-      - { name: title, label: Title (comma-separated lines), type: string }
+      - { name: title, label: "Title (comma-separated lines)", type: string }
       - { name: description, label: Description, type: string }
       - { name: playButton, label: Play button label, type: string }
       - { name: mainVideoUrl, label: YouTube embed URL, type: string }
       - name: chat
         label: Chat messages
-        type: list
+        type: object
+        list: true
         fields:
           - { name: id, label: ID, type: string }
           - { name: message, label: Message, type: string }
@@ -107,7 +110,11 @@ content:
       - { name: title, label: Section title, type: string }
       - name: steps
         label: Steps
-        type: list
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
         fields:
           - { name: id, label: ID, type: string }
           - { name: title, label: Step title, type: string }
@@ -121,7 +128,11 @@ content:
       - { name: title, label: Section title, type: string }
       - name: steps
         label: Steps
-        type: list
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
         fields:
           - { name: id, label: ID, type: string }
           - { name: title, label: Step title, type: string }
@@ -135,7 +146,11 @@ content:
       - { name: title, label: Section title, type: string }
       - name: steps
         label: Steps
-        type: list
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
         fields:
           - { name: id, label: ID, type: string }
           - { name: title, label: Step title, type: string }
@@ -150,13 +165,17 @@ content:
       - { name: title, label: Section title, type: string }
       - name: services
         label: Services
-        type: list
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
         fields:
           - { name: id, label: ID, type: string }
           - { name: slug, label: Slug, type: string }
           - { name: title, label: Title, type: string }
           - { name: description, label: Description, type: text }
-          - { name: price, label: Price (number), type: string }
+          - { name: price, label: "Price (number)", type: string }
           - { name: illustration, label: Illustration slug, type: string }
 
   - name: what-we-offer-ru
@@ -167,13 +186,17 @@ content:
       - { name: title, label: Section title, type: string }
       - name: services
         label: Services
-        type: list
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
         fields:
           - { name: id, label: ID, type: string }
           - { name: slug, label: Slug, type: string }
           - { name: title, label: Title, type: string }
           - { name: description, label: Description, type: text }
-          - { name: price, label: Price (number), type: string }
+          - { name: price, label: "Price (number)", type: string }
           - { name: illustration, label: Illustration slug, type: string }
 
   - name: what-we-offer-fi
@@ -184,13 +207,17 @@ content:
       - { name: title, label: Section title, type: string }
       - name: services
         label: Services
-        type: list
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
         fields:
           - { name: id, label: ID, type: string }
           - { name: slug, label: Slug, type: string }
           - { name: title, label: Title, type: string }
           - { name: description, label: Description, type: text }
-          - { name: price, label: Price (number), type: string }
+          - { name: price, label: "Price (number)", type: string }
           - { name: illustration, label: Illustration slug, type: string }
 
   # ── Our Little Story ─────────────────────────────────────────────────────────
@@ -200,7 +227,7 @@ content:
     path: content/en/our-little-story.json
     fields:
       - { name: title, label: Section title, type: string }
-      - { name: description, label: Story (double newline = paragraph break), type: rich-text }
+      - { name: description, label: "Story (double newline = paragraph break)", type: rich-text }
 
   - name: our-little-story-ru
     label: "RU · Our Story"
@@ -208,7 +235,7 @@ content:
     path: content/ru/our-little-story.json
     fields:
       - { name: title, label: Section title, type: string }
-      - { name: description, label: Story (double newline = paragraph break), type: rich-text }
+      - { name: description, label: "Story (double newline = paragraph break)", type: rich-text }
 
   - name: our-little-story-fi
     label: "FI · Our Story"
@@ -216,7 +243,7 @@ content:
     path: content/fi/our-little-story.json
     fields:
       - { name: title, label: Section title, type: string }
-      - { name: description, label: Story (double newline = paragraph break), type: rich-text }
+      - { name: description, label: "Story (double newline = paragraph break)", type: rich-text }
 
   # ── Get In Touch ─────────────────────────────────────────────────────────────
   - name: get-in-touch-en
@@ -229,7 +256,11 @@ content:
       - { name: copyText, label: Copy section label, type: string }
       - name: contacts
         label: Contacts
-        type: list
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{icon}: {url}"
         fields:
           - { name: id, label: ID, type: string }
           - { name: icon, label: "Icon (telephone/telegram/whatsapp/email/instagram)", type: string }
@@ -245,7 +276,11 @@ content:
       - { name: copyText, label: Copy section label, type: string }
       - name: contacts
         label: Contacts
-        type: list
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{icon}: {url}"
         fields:
           - { name: id, label: ID, type: string }
           - { name: icon, label: "Icon (telephone/telegram/whatsapp/email/instagram)", type: string }
@@ -261,7 +296,11 @@ content:
       - { name: copyText, label: Copy section label, type: string }
       - name: contacts
         label: Contacts
-        type: list
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{icon}: {url}"
         fields:
           - { name: id, label: ID, type: string }
           - { name: icon, label: "Icon (telephone/telegram/whatsapp/email/instagram)", type: string }
@@ -272,29 +311,19 @@ content:
     label: "Team"
     type: file
     path: content/team.json
+    list:
+      collapsible:
+        collapsed: true
+        summary: "{name}"
     fields:
-      - name: id
-        label: "ID (slug, e.g. igor-ivanov)"
-        type: string
-      - name: name
-        label: Display name
-        type: string
-      - name: avatar
-        label: Avatar
-        type: image
+      - { name: id, label: "ID (slug, e.g. igor-ivanov)", type: string }
+      - { name: name, label: Display name, type: string }
+      - { name: avatar, label: Avatar, type: image }
       - name: social
         label: Social link
         type: object
         fields:
-          - name: url
-            label: "URL or email"
-            type: string
-          - name: isActivated
-            label: Show link
-            type: boolean
-      - name: recruit
-        label: Actively recruiting
-        type: boolean
-      - name: labelName
-        label: "Badge label (e.g. active)"
-        type: string
+          - { name: url, label: "URL or email", type: string }
+          - { name: isActivated, label: Show link, type: boolean }
+      - { name: recruit, label: Actively recruiting, type: boolean }
+      - { name: labelName, label: "Badge label (e.g. active)", type: string }
