@@ -189,6 +189,7 @@ ffmpeg*/
 .claude-temp/
 .claude-workspace/
 claude.log
+CLAUDE.md
 
 # OpenAI Codex CLI
 AGENTS.md
