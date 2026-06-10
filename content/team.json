@@ -1,142 +1,156 @@
-{
-  "igor-ivanov": {
-    "name": "Igor Ivanov",
-    "avatar": "/assets/images/team/igor_ivanov.webp",
-    "social": {
-      "url": "igor.ivanov@everlume.fi",
-      "isActivated": true
-    },
-    "recruit": false,
-    "labelName": ""
-  },
-  "ivan-zaletov": {
-    "name": "Ivan Zaletov",
-    "avatar": "/assets/images/team/234234234x-1.webp",
-    "social": {
-      "url": "ivan@gmail.com",
-      "isActivated": false
-    },
-    "recruit": false,
-    "labelName": ""
-  },
-  "violetta-suokas": {
-    "name": "Violetta Suokas",
-    "avatar": "/assets/images/team/45345345.webp",
-    "social": {
-      "url": "https://www.instagram.com/letta_creative/",
-      "isActivated": true
-    },
-    "recruit": false,
-    "labelName": ""
-  },
-  "yura-papu": {
-    "name": "Yura Papu",
-    "avatar": "/assets/images/team/yura_papu.jpg",
-    "social": {
-      "url": "https://www.youtube.com/@yuraPaPu",
-      "isActivated": true
-    },
-    "recruit": true,
-    "labelName": "active"
-  },
-  "yora-avalainen": {
-    "name": "Yora Avalainen",
-    "avatar": "/assets/images/team/345343.webp",
-    "social": {
-      "url": "https://www.youtube.com/@discoveryfinland24/videos",
-      "isActivated": true
-    },
-    "recruit": true,
-    "labelName": "active"
-  },
-  "ilya-redin": {
-    "name": "Ilya Redin",
-    "avatar": "/assets/images/team/876565876.webp",
-    "social": {
-      "url": "https://www.youtube.com/@ieredin",
-      "isActivated": false
-    },
-    "recruit": false,
-    "labelName": ""
-  },
-  "evgeni-kamardin": {
-    "name": "Evgeni Kamardin",
-    "avatar": "/assets/images/team/evgeny-kamardin.jpg",
-    "social": {
-      "url": "https://vimeo.com/user19148308",
-      "isActivated": false
-    },
-    "recruit": false,
-    "labelName": ""
-  },
-  "alisa-vlasova": {
-    "name": "Alisa Vlasova",
-    "avatar": "/assets/images/team/432452342.webp",
-    "social": {
-      "url": null,
-      "isActivated": false
-    },
-    "recruit": false,
-    "labelName": ""
-  },
-  "aleksandr-andro": {
-    "name": "Aleksandr Andro",
-    "avatar": "/assets/images/team/andro-1.webp",
-    "social": {
-      "url": "https://instagram.com/alexandrandrohell?igshid=YmMyMTA2M2Y=",
-      "isActivated": true
-    },
-    "recruit": true,
-    "labelName": "Active"
-  },
-  "anastassia-klement": {
-    "name": "Anastassia Klement",
-    "avatar": "/assets/images/team/anastassia_klement.webp",
-    "social": {
-      "url": "https://www.facebook.com/fotoelu",
-      "isActivated": false
-    },
-    "recruit": false,
-    "labelName": ""
-  },
-  "dmitry-korolevsky": {
-    "name": "Dmitry Korolevsky",
-    "avatar": "/assets/images/team/dmitri_korolevski.webp",
-    "social": {
-      "url": "https://dmitrykorolevskiy.myportfolio.com/projects?fbclid=IwAR1uZXWu3xnFTiPbuoy1hJlOphhWtw8KV-tKC_j0z77CqOcc8Y1wz7n1qwE",
-      "isActivated": true
-    },
-    "recruit": false,
-    "labelName": ""
-  },
-  "evgeny-pukki": {
-    "name": "Evgeny Pukki",
-    "avatar": "/assets/images/team/evgeny_pukki.jpg",
-    "social": {
-      "url": "https://www.youtube.com/@evgenypukki524/videos",
-      "isActivated": true
-    },
-    "recruit": false,
-    "labelName": ""
-  },
-  "stan-marinets": {
-    "name": "Stan Marinets",
-    "avatar": "/assets/images/team/stan_marinets.jpg",
-    "social": {
-      "url": "https://www.linkedin.com/mwlite/in/stanislav-marinets-665899100",
-      "isActivated": true
-    },
-    "recruit": false,
-    "labelName": ""
-  },
-  "tatiana-nedenko": {
-    "name": "Tatiana Nedenko",
-    "avatar": "/assets/images/team/79373640_2593834340835354_743595436077481984_n.webp",
-    "social": {
-      "url": null,
-      "isActivated": false
-    },
-    "recruit": false,
-    "labelName": ""
-  }
-}
+[
+	{
+		"id": "igor-ivanov",
+		"name": "Igor Ivanov",
+		"avatar": "/assets/images/team/igor_ivanov.webp",
+		"social": {
+			"url": "igor.ivanov@everlume.fi",
+			"isActivated": true
+		},
+		"recruit": false,
+		"labelName": ""
+	},
+	{
+		"id": "ivan-zaletov",
+		"name": "Ivan Zaletov",
+		"avatar": "/assets/images/team/234234234x-1.webp",
+		"social": {
+			"url": "ivan@gmail.com",
+			"isActivated": false
+		},
+		"recruit": false,
+		"labelName": ""
+	},
+	{
+		"id": "violetta-suokas",
+		"name": "Violetta Suokas",
+		"avatar": "/assets/images/team/45345345.webp",
+		"social": {
+			"url": "https://www.instagram.com/letta_creative/",
+			"isActivated": true
+		},
+		"recruit": false,
+		"labelName": ""
+	},
+	{
+		"id": "yura-papu",
+		"name": "Yura Papu",
+		"avatar": "/assets/images/team/yura_papu.webp",
+		"social": {
+			"url": "https://www.youtube.com/@yuraPaPu",
+			"isActivated": true
+		},
+		"recruit": true,
+		"labelName": "active"
+	},
+	{
+		"id": "yora-avalainen",
+		"name": "Yora Avalainen",
+		"avatar": "/assets/images/team/345343.webp",
+		"social": {
+			"url": "https://www.youtube.com/@discoveryfinland24/videos",
+			"isActivated": true
+		},
+		"recruit": true,
+		"labelName": "active"
+	},
+	{
+		"id": "ilya-redin",
+		"name": "Ilya Redin",
+		"avatar": "/assets/images/team/876565876.webp",
+		"social": {
+			"url": "https://www.youtube.com/@ieredin",
+			"isActivated": false
+		},
+		"recruit": false,
+		"labelName": ""
+	},
+	{
+		"id": "evgeni-kamardin",
+		"name": "Evgeni Kamardin",
+		"avatar": "/assets/images/team/evgeny-kamardin.webp",
+		"social": {
+			"url": "https://vimeo.com/user19148308",
+			"isActivated": false
+		},
+		"recruit": false,
+		"labelName": ""
+	},
+	{
+		"id": "alisa-vlasova",
+		"name": "Alisa Vlasova",
+		"avatar": "/assets/images/team/432452342.webp",
+		"social": {
+			"url": null,
+			"isActivated": false
+		},
+		"recruit": false,
+		"labelName": ""
+	},
+	{
+		"id": "aleksandr-andro",
+		"name": "Aleksandr Andro",
+		"avatar": "/assets/images/team/andro-1.webp",
+		"social": {
+			"url": "https://instagram.com/alexandrandrohell?igshid=YmMyMTA2M2Y=",
+			"isActivated": true
+		},
+		"recruit": true,
+		"labelName": "Active"
+	},
+	{
+		"id": "anastassia-klement",
+		"name": "Anastassia Klement",
+		"avatar": "/assets/images/team/anastassia_klement.webp",
+		"social": {
+			"url": "https://www.facebook.com/fotoelu",
+			"isActivated": false
+		},
+		"recruit": false,
+		"labelName": ""
+	},
+	{
+		"id": "dmitry-korolevsky",
+		"name": "Dmitry Korolevsky",
+		"avatar": "/assets/images/team/dmitri_korolevski.webp",
+		"social": {
+			"url": "https://dmitrykorolevskiy.myportfolio.com/projects?fbclid=IwAR1uZXWu3xnFTiPbuoy1hJlOphhWtw8KV-tKC_j0z77CqOcc8Y1wz7n1qwE",
+			"isActivated": true
+		},
+		"recruit": false,
+		"labelName": ""
+	},
+	{
+		"id": "evgeny-pukki",
+		"name": "Evgeny Pukki",
+		"avatar": "/assets/images/team/evgeny_pukki.webp",
+		"social": {
+			"url": "https://www.youtube.com/@evgenypukki524/videos",
+			"isActivated": true
+		},
+		"recruit": false,
+		"labelName": ""
+	},
+	{
+		"id": "stan-marinets",
+		"name": "Stan Marinets",
+		"avatar": "/assets/images/team/stan_marinets.webp",
+		"social": {
+			"url": "https://www.linkedin.com/mwlite/in/stanislav-marinets-665899100",
+			"isActivated": true
+		},
+		"recruit": false,
+		"labelName": ""
+	},
+	{
+		"id": "tatiana-nedenko",
+		"name": "Tatiana Nedenko",
+		"avatar": "/assets/images/team/79373640_2593834340835354_743595436077481984_n.webp",
+		"social": {
+			"url": null,
+			"isActivated": false
+		},
+		"recruit": false,
+		"labelName": ""
+	}
+]

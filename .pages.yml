@@ -273,6 +273,28 @@ content:
     type: file
     path: content/team.json
     fields:
-      - name: ""
-        label: Team members
+      - name: id
+        label: "ID (slug, e.g. igor-ivanov)"
+        type: string
+      - name: name
+        label: Display name
+        type: string
+      - name: avatar
+        label: Avatar
+        type: image
+      - name: social
+        label: Social link
         type: object
+        fields:
+          - name: url
+            label: "URL or email"
+            type: string
+          - name: isActivated
+            label: Show link
+            type: boolean
+      - name: recruit
+        label: Actively recruiting
+        type: boolean
+      - name: labelName
+        label: "Badge label (e.g. active)"
+        type: string

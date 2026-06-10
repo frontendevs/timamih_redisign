@@ -12,6 +12,7 @@ import { join } from "node:path";
 export type Locale = "en" | "ru" | "fi";
 
 export interface TeamPerson {
+	id: string;
 	name: string;
 	avatar: string | null;
 	social: {
@@ -22,7 +23,7 @@ export interface TeamPerson {
 	labelName: string;
 }
 
-export type TeamRegistry = Record<string, TeamPerson>;
+export type TeamRegistry = TeamPerson[];
 
 // ── Navigation ────────────────────────────────────────────────────────────────
 
@@ -182,7 +183,7 @@ export function loadContent(locale: Locale): PageContent {
 	const localeDir = join(CONTENT_ROOT, locale);
 	const enDir = join(CONTENT_ROOT, "en");
 
-	const team = readJson<TeamRegistry>(join(CONTENT_ROOT, "team.json"));
+	const team = readJson<TeamPerson[]>(join(CONTENT_ROOT, "team.json"));
 	const site = readJson<SiteContent>(join(localeDir, "site.json"));
 	const navigation = readJson<NavigationContent>(join(localeDir, "navigation.json"));
 	const hero = readJson<HeroContent>(join(localeDir, "hero.json"));
@@ -219,7 +220,7 @@ export function loadContent(locale: Locale): PageContent {
 	const resolvedServices: ResolvedService[] = whatWeOffer.services.map((service) => ({
 		...service,
 		teammates: service.teammates.map((tm) => {
-			const person = team[tm.ref];
+			const person = team.find((p) => p.id === tm.ref);
 			if (!person) {
 				throw new Error(
 					`[content] Broken teammate ref "${tm.ref}" in ${locale}/what-we-offer.json (service: "${service.title}")`,
