@@ -31,9 +31,7 @@ const localeEntries = Object.fromEntries(
 );
 
 // 404 entry — built by prebuild
-const notFoundEntries = existsSync(r("pages/404.html"))
-	? { "404": r("pages/404.html") }
-	: {};
+const notFoundEntries = existsSync(r("pages/404.html")) ? { "404": r("pages/404.html") } : {};
 
 const staticEntries = {
 	...localeEntries,
@@ -52,9 +50,8 @@ const staticEntries = {
 // ─── Config ───────────────────────────────────────────────────────────────────
 
 export default defineConfig({
-	// base: "./" — uncomment if deploying to a subdirectory or serving via file://.
-	// Default "/" assumes the site lives at the domain root.
-	// base: "./",
+	// Switch to "/" once custom domain timamih.com is active (DNS + Pages settings).
+	base: "/timamih_redisign/",
 
 	// HTML root: Vite serves and resolves assets relative to this directory.
 	root: r("pages"),
