@@ -1,0 +1,89 @@
+{
+  "en": {
+    "links": [
+      {
+        "id": "21945229",
+        "name": "Main",
+        "navanchor": "/"
+      },
+      {
+        "id": "15424742",
+        "name": "How we work",
+        "navanchor": "#how-we-work"
+      },
+      {
+        "id": "15424743",
+        "name": "What we offer",
+        "navanchor": "#what-we-offer"
+      },
+      {
+        "id": "15424744",
+        "name": "About us",
+        "navanchor": "#who-we-are"
+      },
+      {
+        "id": "15424745",
+        "name": "Get in touch",
+        "navanchor": "#get-in-touch"
+      }
+    ]
+  },
+  "ru": {
+    "links": [
+      {
+        "id": "21945231",
+        "name": "Главная",
+        "navanchor": "/"
+      },
+      {
+        "id": "15424750",
+        "name": "Как мы работаем",
+        "navanchor": "#how-we-work"
+      },
+      {
+        "id": "15424751",
+        "name": "Что мы предлагаем",
+        "navanchor": "#what-we-offer"
+      },
+      {
+        "id": "15424752",
+        "name": "О нас",
+        "navanchor": "#who-we-are"
+      },
+      {
+        "id": "15424753",
+        "name": "Связаться",
+        "navanchor": "#get-in-touch"
+      }
+    ]
+  },
+  "fi": {
+    "links": [
+      {
+        "id": "21945230",
+        "name": "Kotisivu",
+        "navanchor": "/"
+      },
+      {
+        "id": "15424746",
+        "name": "Miten toimimme",
+        "navanchor": "#how-we-work"
+      },
+      {
+        "id": "15424747",
+        "name": "Mitä me tarjoamme",
+        "navanchor": "#what-we-offer"
+      },
+      {
+        "id": "15424748",
+        "name": "Meistä",
+        "navanchor": "#who-we-are"
+      },
+      {
+        "id": "15424749",
+        "name": "Ota yhteyttä",
+        "navanchor": "#get-in-touch"
+      }
+    ]
+  }
+}

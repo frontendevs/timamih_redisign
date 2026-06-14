@@ -1,0 +1,494 @@
+{
+  "en": {
+    "title": "What we offer",
+    "services": [
+      {
+        "id": "15811458",
+        "slug": "ads",
+        "order": 1,
+        "title": "Advertising",
+        "description": "We have an individual approach to our clients and their target audience on various Internet platforms. We will also help you advertise and promote your product (business cards, banners, stickers and much more).",
+        "price": "150",
+        "buttonName": "Marketers",
+        "illustration": "ads",
+        "teammates": [
+          {
+            "ref": "igor-ivanov",
+            "proff": "Marketing specialist",
+            "description": "A professional working to promote your product or service. I offer consultations and can create a package of optimal solutions at all stages. I create pitches and Web portfolios."
+          },
+          {
+            "ref": "ivan-zaletov",
+            "proff": "Advertising assistant",
+            "description": "Main assistant in technical tasks and in the field of halo effects."
+          }
+        ]
+      },
+      {
+        "id": "64111352",
+        "slug": "it",
+        "order": 2,
+        "title": "Web-design",
+        "description": "Now our service platform offers Web design and developing mobile applications, as well as the development of sites on WordPress. In today's world, a modern website has become a necessity for any business.",
+        "price": "400",
+        "buttonName": "Developers",
+        "illustration": "it",
+        "teammates": [
+          {
+            "ref": "violetta-suokas",
+            "proff": "ux/ui designer",
+            "description": "Specialist in Web design, Wordpress, and mobile application design. I also create logos, banners, illustrations, and business cards."
+          }
+        ]
+      },
+      {
+        "id": "15811460",
+        "slug": "video",
+        "order": 3,
+        "title": "Video production",
+        "description": "We have selected the best specialists, directors, bloggers, video operators, and video editors with vast work experience. Remember that we have a wide price range, which allows us to adjust to your budget.",
+        "price": "395",
+        "buttonName": "Media specialists",
+        "illustration": "video",
+        "teammates": [
+          {
+            "ref": "yura-papu",
+            "proff": "Youtube blogger",
+            "description": "Yura has over 6 million views on YouTube. On his channel, “YuraPaPu”, Yura talks about life in Finland."
+          },
+          {
+            "ref": "yora-avalainen",
+            "proff": "Video operator",
+            "description": "I create exclusive aerial shots with the help of a drone, as well as budget segment video on a turnkey basis"
+          },
+          {
+            "ref": "ilya-redin",
+            "proff": "Youtube blogger / Director - videographer",
+            "description": "In addition to YouTube, I film documentaries and feature films, as well as promotional videos and music videos."
+          },
+          {
+            "ref": "evgeni-kamardin",
+            "proff": "Video operator, director",
+            "description": "I create vivid stories from objects, colors, sounds and words with the help of my work."
+          },
+          {
+            "ref": "alisa-vlasova",
+            "proff": "Video operator",
+            "description": "I make innovative advertising and unforgettable videos for creative people: artists, dancers, musicians, etc."
+          }
+        ]
+      },
+      {
+        "id": "15811459",
+        "slug": "photo",
+        "order": 4,
+        "title": "Photography",
+        "description": "Our photographers possess different approaches to photography and a wide price range. High-quality photosets and Photoshop effects deeply influence how your business is recognized in the media space. In life, there are many interesting events that one would want to capture in good quality.",
+        "price": "95",
+        "buttonName": "photographers",
+        "illustration": "photo",
+        "teammates": [
+          {
+            "ref": "aleksandr-andro",
+            "proff": "Photographer",
+            "description": "I perform my work quickly and efficiently. I take photos at weddings and public events, as well as in real estate segment."
+          },
+          {
+            "ref": "anastassia-klement",
+            "proff": "Photographer",
+            "description": "A professional approach to photography and Photoshop. I am also engaged in photo advertising of various products."
+          },
+          {
+            "ref": "alisa-vlasova",
+            "proff": "Photographer",
+            "description": "I create photo shoots with unique concepts and \"creative camera combos\" - photo and video stories."
+          }
+        ]
+      },
+      {
+        "id": "15811462",
+        "slug": "drone",
+        "order": 6,
+        "title": "Aerial filming",
+        "description": "Filming from the air has long been available for everybody. Aerial advertisement will improve the promotion of your product or service and create a “wow” effect amongst the end-users.",
+        "price": "120",
+        "buttonName": "operators",
+        "illustration": "drone",
+        "teammates": [
+          {
+            "ref": "evgeni-kamardin",
+            "proff": "Drone operator",
+            "description": "Every piece of video art is a story. There is no difference, whether it is an advertisement, a feature film or a documentary project."
+          },
+          {
+            "ref": "yora-avalainen",
+            "proff": "drone operator",
+            "description": "I make unique aerial shots with the help of a drone, as well as budget segment video on a turnkey basis."
+          }
+        ]
+      },
+      {
+        "id": "64111436",
+        "slug": "consult",
+        "order": 7,
+        "title": "Consultations",
+        "description": "A certified translator can offer you a consultation and provide translation services so that you can correctly convey your message in another language. Other consultations are also available to you for the successful development of your organization, for example, NGO.",
+        "price": "50",
+        "buttonName": "Consultants",
+        "illustration": "consult",
+        "teammates": [
+          {
+            "ref": "stan-marinets",
+            "proff": "Interpreter",
+            "description": "Authorized translator in language pair Finnish-Russian, translator and interpreter in English-Finnish-Russian-Estonian, specialist in the NGO sphere."
+          }
+        ]
+      },
+      {
+        "id": "64111448",
+        "slug": "sound",
+        "order": 8,
+        "title": "Sound",
+        "description": "Dubbing can save any content and improve the quality and overall perception of the product. The right music track will create the right atmosphere for the video.",
+        "price": "150",
+        "buttonName": "Musician",
+        "illustration": "sound",
+        "teammates": [
+          {
+            "ref": "tatiana-nedenko",
+            "proff": "Dubbing actor",
+            "description": "Voice-over, dubbing actor, voicing commercials, creating a voice story in Russian and English."
+          }
+        ]
+      }
+    ]
+  },
+  "ru": {
+    "title": "Что мы предлагаем",
+    "services": [
+      {
+        "id": "15811468",
+        "slug": "ads",
+        "order": 1,
+        "title": "Реклама",
+        "description": "Мы индивидуально подходим вашей целевой аудитории на различных интернет площадках. Чтобы ускорить и облегчить процесс выберете Категорию рекламы: Контекстная, Таргетированная, Видеореклама, Визитки, Баннеры, Наклейки, Фляеры.",
+        "price": "150",
+        "buttonName": "Маркетологи  ",
+        "illustration": "ads",
+        "teammates": [
+          {
+            "ref": "igor-ivanov",
+            "proff": "Маркетолог",
+            "description": "Специалист по продвижению вашего товара или услуги, предоставляю консультации и создаю пакет оптимальных решений на всех этапах. Создание питча и Web portfolio. "
+          },
+          {
+            "ref": "ivan-zaletov",
+            "proff": "Рекламный ассистент ",
+            "description": "Главный ассистент по техническим задачам, а также в области гало эффектов."
+          }
+        ]
+      },
+      {
+        "id": "64111354",
+        "slug": "it",
+        "order": 2,
+        "title": "Дизайн",
+        "description": "Теперь наш сервис предлагает web дизайн и дизайн мобильных приложений, а также разработку сайтов на Wordpress. В современном мире наличие современного сайта стало необходимостью для любого бизнеса. Категорию дизайна: Графический, Web, Мобильных приложений, UX/UI, 3D, иллюстраций.",
+        "price": "400",
+        "buttonName": "Разработчики",
+        "illustration": "it",
+        "teammates": [
+          {
+            "ref": "violetta-suokas",
+            "proff": "ux/ui дизайнер",
+            "description": "Специалист в сфере Web дизайна, Wordpress, и дизайн мобильных приложений. Также рисую: логотипы, баннеры, иллюстрации, и визитки. "
+          }
+        ]
+      },
+      {
+        "id": "15811470",
+        "slug": "video",
+        "order": 3,
+        "title": "Видеосъёмка",
+        "description": "Для вас отобрали, режиссёров, блогеров, видеооператоров с хорошим опытом и стажем работы. Помните, что у нас широкий ценовой диапазон, это позволяет подстроится под ваш бюджет. Категорию видеосъёмки: Фильмы, Мероприятия, Клипы, Реклама, Интервью, AI, Рилсс. ",
+        "price": "395",
+        "buttonName": "операторы",
+        "illustration": "video",
+        "teammates": [
+          {
+            "ref": "evgeni-kamardin",
+            "proff": "Видео оператор, режиссер.",
+            "description": "Своей работой я создаю яркие истории из предметов, цвета, звуков и слов. "
+          },
+          {
+            "ref": "yora-avalainen",
+            "proff": "Видео оператор",
+            "description": "Делаю эксклюзивные кадры с воздуха при помощи дрона а также бюджетный видео сегмент под ключ."
+          },
+          {
+            "ref": "ilya-redin",
+            "proff": "Youtube блогер / Режиссёр - видеограф",
+            "description": "Помимо Ютуба я занимаюсь съёмками документальных и художественных фильмов, а также рекламные видеоролики и муз. Клипы."
+          },
+          {
+            "ref": "yura-papu",
+            "proff": "Youtube блогер",
+            "description": "Юра набрал больше 6000000 просмотров на YouTube. На своём канале Юра рассказывает про жизнь в Финляндии. "
+          },
+          {
+            "ref": "alisa-vlasova",
+            "proff": "Видео оператор",
+            "description": "Создаю креативную рекламу и незабываемые видео для творческих людей: художников, танцоров, музыкантов и др.\n"
+          }
+        ]
+      },
+      {
+        "id": "15811469",
+        "slug": "photo",
+        "order": 4,
+        "title": "Фотосъёмка",
+        "description": "Наши фотографы обладают разным стилем съёмки и широким ценовым диапазоном. Качественный снимки сильно влияют на узнаваемость вашего бизнеса в медиа пространстве. Категорию фотосъёмки: Портретные, Предметные, Репортажные, Мероприятия, Свадьба, Семейные, Другое.",
+        "price": "95",
+        "buttonName": "фотографы",
+        "illustration": "photo",
+        "teammates": [
+          {
+            "ref": "anastassia-klement",
+            "proff": "Профессиональный фотограф",
+            "description": "Профессиональный подход в сфере фотосъемки и фотошопа, также занимаюсь фото рекламой различных товаров."
+          },
+          {
+            "ref": "aleksandr-andro",
+            "proff": "Профессиональный фотограф",
+            "description": "Делаю быстро и качественно, снимаю свадьбы и массовые мероприятия, а так же недвижимость."
+          },
+          {
+            "ref": "alisa-vlasova",
+            "proff": "Фотограф",
+            "description": "Создаю фотосессии с уникальными концепциями и креативные комбосъёмки - фото- и видеоистории."
+          }
+        ]
+      },
+      {
+        "id": "15811472",
+        "slug": "drone",
+        "order": 6,
+        "title": "Аэросъемка",
+        "description": "Съёмка с воздуха уже давно доступна для всех. Реклама такого формата позволяет улучшить продвижение вашего продукта и создать \"Вау\" эффект для конечного потребителя. Категорию аэросъемки: Свадебная, Праздничная, Геодезическая, Рекламная, Маршрутная, Спортивная, Другое.",
+        "price": "120",
+        "buttonName": "операторы",
+        "illustration": "drone",
+        "teammates": [
+          {
+            "ref": "yora-avalainen",
+            "proff": "Оператор дрона",
+            "description": "Делаю эксклюзивные кадры с воздуха при помощи дрона а также бюджетный видео сегмент под ключ."
+          },
+          {
+            "ref": "evgeni-kamardin",
+            "proff": "Оператор дрона",
+            "description": "Любая частичка видео искусства – это история. Неважно, реклама это, игровое кино или документальный проект. "
+          }
+        ]
+      },
+      {
+        "id": "64111438",
+        "slug": "consult",
+        "order": 7,
+        "title": "Консультации",
+        "description": "Вам так же доступны консультации от разных специалист или переводчиков для успешного развития вашей структуры и бизнеса. Категории консультаций: Управленческая, Финансовая, Юридическая, Обучающая, HR.",
+        "price": "50",
+        "buttonName": "Консультанты",
+        "illustration": "consult",
+        "teammates": [
+          {
+            "ref": "stan-marinets",
+            "proff": "Переводчик",
+            "description": "Авторизованный переводчик рус-фин, специалист по продвижению НГО."
+          }
+        ]
+      },
+      {
+        "id": "64111450",
+        "slug": "sound",
+        "order": 8,
+        "title": "Звук",
+        "description": "Дубляж может спасти любой контент и повысить качество и общее восприятие продукта, а правильный музыкальный трек создаст нужную атмосферу для ролика. Категории дубляжа: Фильма, Мероприятия, Клипа, Рекламы, Интервью, ТV, Аудиокниги.",
+        "price": "150",
+        "buttonName": "Специалисты",
+        "illustration": "sound",
+        "teammates": [
+          {
+            "ref": "tatiana-nedenko",
+            "proff": "Актёр дубляжа",
+            "description": "Закадровый голос, актёр дубляжа. Озвучка рекламных роликов, постановка голосового сюжета, на русском и английском языке. "
+          }
+        ]
+      }
+    ]
+  },
+  "fi": {
+    "title": "Mitä me tarjoamme",
+    "services": [
+      {
+        "id": "15811463",
+        "slug": "ads",
+        "order": 1,
+        "title": "Mainonta",
+        "description": "Meillä on yksilöllinen lähestymistapa asiakkaisiimme ja heidän kohdeyleisöönsä useilla Internet-alustoilla. Prosessin nopeuttamiseksi ja helpottamiseksi valitse jokin ehdotettu mainontatyyppi: kontekstuaalinen, kohdistettu, videomainonta, käyntikortit, bannerit, tarrat, lentolehtiset.",
+        "price": "150",
+        "buttonName": "Markkinoijat",
+        "illustration": "ads",
+        "teammates": [
+          {
+            "ref": "igor-ivanov",
+            "proff": "Markkinoija",
+            "description": "Asiantuntija, joka auttaa mainostamaan tuotteitasi tai palveluasi. Tarjoan neuvoja, luon optimaalisten ratkaisujen paketin, luon mainospuheita ja Web portfolioita."
+          },
+          {
+            "ref": "ivan-zaletov",
+            "proff": "Mainosavustaja",
+            "description": "Pääassistentti teknisissä tehtävissä sekä haloefektien alalla."
+          }
+        ]
+      },
+      {
+        "id": "64111353",
+        "slug": "it",
+        "order": 2,
+        "title": "Suunnittelu",
+        "description": "Nyt mediapalvelumme sisältää myös web-suunnittelun, Wordpress-verkkosivut sekä mobiilisovellusten kehityksen. Nykymaailmassa hyvin suunniteltu ja nykyaikainen kotisivu on välttämättömyys mille tahansa liiketoiminnalle. Suunnitteluluokkat: Grafiikka, Web, Mobiilisovellukset, UX/UI, 3D, kuvitukset.",
+        "price": "400",
+        "buttonName": "Kehittäjät",
+        "illustration": "it",
+        "teammates": [
+          {
+            "ref": "violetta-suokas",
+            "proff": "ux/ui suunnittelija",
+            "description": "Web-suunnittelun, Wordpress-verkkosivujen ja mobiilisovellusten kehittämisen asiantuntija. Suunnittelen myös: logoja, bannereita, piirroksia ja käyntikortteja."
+          }
+        ]
+      },
+      {
+        "id": "15811465",
+        "slug": "video",
+        "order": 3,
+        "title": "Videotuotanto",
+        "description": "Valitsimme sinulle parhaimmat asiantuntijat, ohjaajat, bloggaajat, ja video-operaattorit, joilla on vankka kokemus sekä pitkä työkokemus. Muista, että meillä on laaja hintahaarukka, jonka avulla voimme mukautua budjettiin kuin budjettiin. Videoluokkat: Elokuvat, Tapahtumat, Leikkeet, Mainonta, Podcastit, AI, Reels.",
+        "price": "395",
+        "buttonName": "mediatyöntekijät",
+        "illustration": "video",
+        "teammates": [
+          {
+            "ref": "evgeni-kamardin",
+            "proff": "Videokuvaaja, ohjaaja.",
+            "description": "Luon omalla työlläni esineistä, väristä, äänistä ja sanoista kirkkaita tarinoita."
+          },
+          {
+            "ref": "yora-avalainen",
+            "proff": "Videokuvaaja, ohjaaja.",
+            "description": "Luon uniikkeja kohtauksia ilmakuvauskopterilla sekä teen myös perusvideokuvausta Avaimet käteen -periaatteella."
+          },
+          {
+            "ref": "ilya-redin",
+            "proff": "Videontekijä, ohjaaja, käsikirjoittaja.",
+            "description": "YouTube-videoiden lisäksi kuvaan dokumentti- ja fiktioelokuvia, mainosvideoita ja musiikkivideoita."
+          },
+          {
+            "ref": "yura-papu",
+            "proff": "Youtube-bloggaaja",
+            "description": "Urani aikana olen kerännyt yli 6 miljoonaa katselukertaa YouTubessa. “YuraPaPu” kertoo omalla kanavallaan elämästä Suomessa."
+          },
+          {
+            "ref": "alisa-vlasova",
+            "proff": "Videokuvaaja",
+            "description": "Luon innovatiivisia mainoksia ja unohtumattomia videoita taiteilijoille, tanssijoille, muusikoille jne. \n"
+          }
+        ]
+      },
+      {
+        "id": "15811464",
+        "slug": "photo",
+        "order": 4,
+        "title": "Valokuvaus",
+        "description": "Valokuvaajillamme on erilaisia kuvaustyylejä sekä laaja hintahaarukka. Laadukkaat valokuvaussetit vaikuttavat suuresti yrityksesi tunnettuuteen. Valokuvausluokat: Muotokuva, Aihe, Reportaasi, Tapahtumat, Häät, Perhe.",
+        "price": "95",
+        "buttonName": "valokuvaajat",
+        "illustration": "photo",
+        "teammates": [
+          {
+            "ref": "aleksandr-andro",
+            "proff": "Valokuvaaja",
+            "description": "Teen sen nopeasti ja tehokkaasti, kuvaan häitä ja julkisia tapahtumia sekä kiinteistöjä."
+          },
+          {
+            "ref": "anastassia-klement",
+            "proff": "Valokuvaaja",
+            "description": "Ammattitaitoinen lähestymistapa valokuvaukseen sekä editoimiseen. Lisäksi luon mainoksia kuvaamalla erilaisia tavaroita."
+          },
+          {
+            "ref": "alisa-vlasova",
+            "proff": "Valokuvaaja",
+            "description": "Teen valokuvausta uniikeilla konsepteilla ja kamerakombokuvauksia - valokuva- ja videotarinoita."
+          }
+        ]
+      },
+      {
+        "id": "15811467",
+        "slug": "drone",
+        "order": 6,
+        "title": "Ilmakuvaus",
+        "description": "Ilmakuvaus on ollut jo pitkään saatavilla myös pienyrityksille, tällä työkalulla saat kauniita ja laadukkaita valokuva- ja videosisältöjä erilaisiin tehtäviin. Tämä kuvaus lisää vaihtelua mainosvideoosi ja tekee siitä tasapainoisemman. Ilmakuvausluokat: Häät, tapahtuma, Geodeettinen, Mainonta, Reitti, Urheilu.",
+        "price": "120",
+        "buttonName": "operaattorit",
+        "illustration": "drone",
+        "teammates": [
+          {
+            "ref": "evgeni-kamardin",
+            "proff": "Drone-operaattori",
+            "description": "Pienikin videotaiteen osa on tarina. Sillä ei ole merkitystä, onko kyseessä mainos, elokuva tai dokumentti."
+          },
+          {
+            "ref": "yora-avalainen",
+            "proff": "Drone-operaattori",
+            "description": "Luon ainutlaatuisia otoksia dronella ilmasta käsin. Lisäksi teen perusvideokuvausta Avaimet käteen -periaatteella."
+          }
+        ]
+      },
+      {
+        "id": "64111437",
+        "slug": "consult",
+        "order": 7,
+        "title": "Konsultaatiot ja käännökset",
+        "description": "Sinulla on myös mahdollisuus saada konsultaatioita eri asiantuntijoilta tai kääntäjiltä rakenteen ja liiketoimintasi menestyksekkääseen kehittämiseen. Neuvottelujen luokka: Hallinto, talous, laki, koulutus, HR.",
+        "price": "50",
+        "buttonName": "konsultit",
+        "illustration": "consult",
+        "teammates": [
+          {
+            "ref": "stan-marinets",
+            "proff": "Kääntäjä-tulkki",
+            "description": "Asiakirjojen Auktorisoitu kääntäjä kieliparissa suomi-venäjä, kääntäjä ja tulkki kielissä englanti-suomi-venäjä-viro, järjestötoiminnan asiantuntija."
+          }
+        ]
+      },
+      {
+        "id": "64111449",
+        "slug": "sound",
+        "order": 8,
+        "title": "Ääni",
+        "description": "Jälkiäänitys eli dubbaus tai selostus voi pelastaa minkä tahansa sisällön sekä parantaa lopputuotteen laatua ja yleiskuvaa. Oikea musiikki luo videolle oikean tunnelman. Jälkiäänitysluokka: Elokuvat, Tapahtumat, Leike, Mainonta, Haastattelu, TV, Äänikirjat.",
+        "price": "150",
+        "buttonName": "Äänitysasiantuntijat",
+        "illustration": "sound",
+        "teammates": [
+          {
+            "ref": "tatiana-nedenko",
+            "proff": "Jälkiäänitys",
+            "description": "Jälkiäänitysnäyttelijä: selostus, mainosten dubbaus, äänitarinan luominen venäjäksi ja englanniksi."
+          }
+        ]
+      }
+    ]
+  }
+}

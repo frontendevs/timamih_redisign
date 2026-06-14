@@ -1,0 +1,29 @@
+{
+  "en": {
+    "siteName": "timamih",
+    "titleSuffix": "TimaMih",
+    "facebookPageUrl": "https://www.facebook.com/TimaMihTmi",
+    "seo": {
+      "title": "Creative HR Agency - Finland ",
+      "description": "Websites, online stores, logos, design, social media design, consulting, and more. Creative tools for your business."
+    }
+  },
+  "ru": {
+    "siteName": "timamih",
+    "titleSuffix": "TimaMih",
+    "facebookPageUrl": "https://www.facebook.com/TimaMihTmi",
+    "seo": {
+      "title": "Креативное HR-агентство в Финляндии | Хельсинки - Вантаа",
+      "description": "Сайты, интернет магазины, логотипы, дизайн, оформление соц.сетей, консультации, и многое другое. Креативные инструменты для вашего бизнеса."
+    }
+  },
+  "fi": {
+    "siteName": "TimaMih",
+    "titleSuffix": "TimaMih",
+    "facebookPageUrl": "https://www.facebook.com/TimaMihTmi",
+    "seo": {
+      "title": "Luova HR-toimisto | Vantaa - Helsinki",
+      "description": "Verkkosivustot, verkkokaupat, logot, suunnittelu, sosiaalisen median suunnittelu, konsultointi ja paljon muuta. Luovat työkalut yrityksellesi."
+    }
+  }
+}

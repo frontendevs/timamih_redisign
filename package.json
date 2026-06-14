@@ -2,8 +2,7 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
-		"prebuild": "vite-node plugins/build-content.ts",
-		"build": "npm run prebuild && vite build",
+		"build": "vite build",
 		"preview": "vite preview",
 		"format": "oxfmt .",
 		"format:check": "oxfmt --check .",

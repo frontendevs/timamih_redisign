@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="robots" content="noindex" />
+		<title>Inline editor · TimaMih</title>
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+			html,
+			body {
+				margin: 0;
+				block-size: 100%;
+			}
+			body {
+				display: grid;
+				grid-template-rows: auto 1fr;
+				font-family: system-ui, sans-serif;
+			}
+			.ed-bar {
+				display: flex;
+				gap: 0.75rem;
+				align-items: center;
+				padding: 0.5rem 0.75rem;
+				background: #1b1b1f;
+				color: #eee;
+				border-block-end: 1px solid #333;
+			}
+			.ed-locales {
+				display: flex;
+				gap: 0.25rem;
+			}
+			.ed-bar button {
+				font: inherit;
+				padding: 0.35rem 0.7rem;
+				border: 1px solid #444;
+				background: #2a2a30;
+				color: #eee;
+				border-radius: 6px;
+				cursor: pointer;
+			}
+			.ed-bar button:hover {
+				background: #34343c;
+			}
+			.ed-bar button[data-current="true"] {
+				background: #3b82f6;
+				border-color: #3b82f6;
+			}
+			.ed-bar button:disabled {
+				opacity: 0.5;
+				cursor: not-allowed;
+			}
+			.ed-status {
+				margin-inline-start: auto;
+				font-size: 0.85rem;
+				opacity: 0.9;
+			}
+			.ed-status[data-kind="error"] {
+				color: #fca5a5;
+			}
+			.ed-frame {
+				border: 0;
+				inline-size: 100%;
+				block-size: 100%;
+				background: #fff;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="ed-bar">
+			<strong>Inline editor</strong>
+			<button type="button" data-js="ed-open">Open pages/ folder</button>
+			<span class="ed-locales">
+				<button type="button" data-js="ed-loc" data-locale="en">EN</button>
+				<button type="button" data-js="ed-loc" data-locale="ru">RU</button>
+				<button type="button" data-js="ed-loc" data-locale="fi">FI</button>
+			</span>
+			<output class="ed-status" data-js="ed-status">Loading…</output>
+		</header>
+		<iframe class="ed-frame" title="Site preview" data-js="ed-frame"></iframe>
+		<script type="module" src="/edit/scripts/edit.ts"></script>
+	</body>
+</html>

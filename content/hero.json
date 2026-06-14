@@ -1,0 +1,53 @@
+{
+  "en": {
+    "label": "Creative HR Agency",
+    "title": "We will, select, an expert, for you",
+    "description": "Creative tools for your business.",
+    "playButton": "Watch video",
+    "mainVideoUrl": "https://www.youtube.com/embed/DEV0dwQh-v8",
+    "chat": [
+      {
+        "id": "15416223",
+        "message": "Hello, I’m Tima."
+      },
+      {
+        "id": "15416225",
+        "message": "HR manager"
+      }
+    ]
+  },
+  "ru": {
+    "label": "Креативное HR-агенство",
+    "title": "подберем,  эксперта,  для вас",
+    "description": "Креативные инструменты для вашего бизнеса.",
+    "playButton": "Смотреть видео",
+    "mainVideoUrl": "https://www.youtube.com/embed/GFd2S6iLm7k",
+    "chat": [
+      {
+        "id": "15416229",
+        "message": "Привет, я Тима."
+      },
+      {
+        "id": "15416230",
+        "message": "HR-менеджер"
+      }
+    ]
+  },
+  "fi": {
+    "label": "Luova HR-toimisto",
+    "title": "Meiltä saa, luovia, ratkaisuja",
+    "description": "Luovat työkalut yrityksellesi.",
+    "playButton": "Katso video",
+    "mainVideoUrl": "https://www.youtube.com/embed/DEV0dwQh-v8",
+    "chat": [
+      {
+        "id": "15416226",
+        "message": "Hei, olen Tima."
+      },
+      {
+        "id": "15416227",
+        "message": "Henkilöstöpäällikkö"
+      }
+    ]
+  }
+}

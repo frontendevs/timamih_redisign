@@ -1,0 +1,92 @@
+{
+  "en": {
+    "title": "Stages of work",
+    "steps": [
+      {
+        "id": "15416657",
+        "title": "Discussion",
+        "description": "In the beginning, we must find out what kind of specialist you are missing and prioritize correctly, or you need to build a working team from scratch, for example, for your new project."
+      },
+      {
+        "id": "15416870",
+        "title": "Commencing the process",
+        "description": "I will conduct the interviews and choose an expert for you who will solve the problem in a certain time."
+      },
+      {
+        "id": "15416871",
+        "title": "Finishing the process",
+        "description": "Experts will show you the intermediate stages of the work that need to be fixed early."
+      },
+      {
+        "id": "15416872",
+        "title": "Promotion",
+        "description": "We recommend ordering promotional services from us for the specified target audience. In addition to content production, an important aspect is advertising the media product on different internet platforms."
+      },
+      {
+        "id": "15416873",
+        "title": "Feedback",
+        "description": "We need feedback to improve our service. Please tell us which advertising services you would like to see on our website. What can we improve? What rules should we follow?"
+      }
+    ]
+  },
+  "ru": {
+    "title": "Этапы работы",
+    "steps": [
+      {
+        "id": "15416879",
+        "title": "Переговоры",
+        "description": "В начале мы составляем техническое задание, дабы правильно расставить приоритеты, и рассчитать объём работы. Достаточно одного специалиста, либо вам собрать команду?"
+      },
+      {
+        "id": "15416880",
+        "title": "Приступаем к работе",
+        "description": "Мы проведем собеседования и подберем вам эксперта, который будет решать поставленную задачу в определённые сроки. Чтобы ускорить и облегчить процесс выберете какую-то из предложенных ниже категорий."
+      },
+      {
+        "id": "15416881",
+        "title": "Процесс",
+        "description": "Специалисты будут показывать вам промежуточные этапы работы, которые нужно корректировать на ранней стадии."
+      },
+      {
+        "id": "15416882",
+        "title": "Продвижение ",
+        "description": "Рекомендуем заказать у нас рекламу по заданной целевой аудитории. Помимо создания контента, важным аспектом является продвижение медиа продукта."
+      },
+      {
+        "id": "15416883",
+        "title": "Обратная связь",
+        "description": "Нам нужна обратная связь, чтобы сделать сервис лучше. Что нам улучшить? Каких правил нам нужно придерживается?"
+      }
+    ]
+  },
+  "fi": {
+    "title": "Työvaiheet",
+    "steps": [
+      {
+        "id": "15416874",
+        "title": "Ideointikeskustelut",
+        "description": "Alussa meidän kannattaa selvitettävä, millaista asiantuntijaa sinulta puuttuu ja priorisoitava oikein, tai sinun on rakennettava toimiva tiimi alusta alkaen esimerkiksi uuteen projektiisi."
+      },
+      {
+        "id": "15416875",
+        "title": "Alkuun pääseminen",
+        "description": "Suoritan haastattelut ja valitsen sinulle asiantuntijan, joka ratkaisee ongelman tietyssä ajassa. Nopeuttaa ja helpottaa prosessia valitsemalla jokin alla ehdotetuista luokista."
+      },
+      {
+        "id": "15416876",
+        "title": "Työprosessi",
+        "description": "Asiantuntijat näyttävät sinulle työn välivaiheet, jotka on korjattava varhaisessa vaiheessa."
+      },
+      {
+        "id": "15416877",
+        "title": "Promootio",
+        "description": "Suosittelemme tilaamaan meiltä mainostuotteita kohdeyleisön saavuttamiseksi. Sisällöntuotannon lisäksi promootion tärkeä osa on mediatuotteen mainostaminen eri verkkoalustoilla."
+      },
+      {
+        "id": "15416878",
+        "title": "Palaute",
+        "description": "Tarvitsemme palautetta palvelumme parantamiseksi. Mitä voimme parantaa? Mitä sääntöjä meidän tulee noudattaa?"
+      }
+    ]
+  }
+}
