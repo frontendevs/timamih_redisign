@@ -188,9 +188,9 @@
       </p>
 
       <h1 class="hero-title" id="hero-title">
-        <span><strong>подберем</strong> </span>
-          <span>эксперта</span>
-          <span>для вас</span>
+        <span><strong data-edit-id="hero.title.bold">подберем</strong><span data-edit-id="hero.title.0.rest"> </span></span>
+          <span data-edit-id="hero.title.1">эксперта</span>
+          <span data-edit-id="hero.title.2">для вас</span>
         <svg class="hero-underline" viewBox="0 0 358 23" fill="none" aria-hidden="true"><path d="M2.58433 17.2277C111.649 0.38611 240.277 -7.98615 349.982 10.3551C356.464 11.4388 359.261 15.0846 357.467 18.433C355.673 21.7815 353.448 24.0515 343.473 22.5036C261.944 6.70847 173.961 7.05371 89.324 12.7935C60.7553 14.7741 32.3866 17.6553 4.33961 21.4247C2.98768 21.565 0.80493 21.2963 0.165868 19.8407C-0.518641 18.2816 1.03868 17.4664 2.58433 17.2277Z"/></svg>
       </h1>
 
@@ -261,13 +261,15 @@
       <output class="hww-numbers" aria-live="polite" aria-atomic="true" data-js="carousel-status">1 / 5</output>
 
       <div class="hww-viewport">
-        <ul class="hww-track" role="list" data-js="carousel-track">
+        <ul class="hww-track" role="list" data-js="carousel-track" data-array="howWeWork.steps">
+          <!-- array:howWeWork.steps:start -->
           <li
             class="hww-slide is-active"
             role="group"
             aria-roledescription="slide"
             aria-label="1 / 5"
             data-js="carousel-slide"
+            data-array-item="0"
           >
             <h3 class="hww-step-title" data-edit-id="howWeWork.steps.0.title">Переговоры</h3>
             <p class="hww-step-desc" data-edit-id="howWeWork.steps.0.description">В начале мы составляем техническое задание, дабы правильно расставить приоритеты, и рассчитать объём работы. Достаточно одного специалиста, либо вам собрать команду?</p>
@@ -278,6 +280,7 @@
             aria-roledescription="slide"
             aria-label="2 / 5"
             data-js="carousel-slide"
+            data-array-item="1"
           >
             <h3 class="hww-step-title" data-edit-id="howWeWork.steps.1.title">Приступаем к работе</h3>
             <p class="hww-step-desc" data-edit-id="howWeWork.steps.1.description">Мы проведем собеседования и подберем вам эксперта, который будет решать поставленную задачу в определённые сроки. Чтобы ускорить и облегчить процесс выберете какую-то из предложенных ниже категорий.</p>
@@ -288,6 +291,7 @@
             aria-roledescription="slide"
             aria-label="3 / 5"
             data-js="carousel-slide"
+            data-array-item="2"
           >
             <h3 class="hww-step-title" data-edit-id="howWeWork.steps.2.title">Процесс</h3>
             <p class="hww-step-desc" data-edit-id="howWeWork.steps.2.description">Специалисты будут показывать вам промежуточные этапы работы, которые нужно корректировать на ранней стадии.</p>
@@ -298,6 +302,7 @@
             aria-roledescription="slide"
             aria-label="4 / 5"
             data-js="carousel-slide"
+            data-array-item="3"
           >
             <h3 class="hww-step-title" data-edit-id="howWeWork.steps.3.title">Продвижение </h3>
             <p class="hww-step-desc" data-edit-id="howWeWork.steps.3.description">Рекомендуем заказать у нас рекламу по заданной целевой аудитории. Помимо создания контента, важным аспектом является продвижение медиа продукта.</p>
@@ -308,11 +313,19 @@
             aria-roledescription="slide"
             aria-label="5 / 5"
             data-js="carousel-slide"
+            data-array-item="4"
           >
             <h3 class="hww-step-title" data-edit-id="howWeWork.steps.4.title">Обратная связь</h3>
             <p class="hww-step-desc" data-edit-id="howWeWork.steps.4.description">Нам нужна обратная связь, чтобы сделать сервис лучше. Что нам улучшить? Каких правил нам нужно придерживается?</p>
           </li>
+          <!-- array:howWeWork.steps:end -->
         </ul>
+        <template data-array-template="howWeWork.steps">
+          <li class="hww-slide" role="group" aria-roledescription="slide" aria-label="" data-js="carousel-slide">
+            <h3 class="hww-step-title" data-edit-id-template="title">Новый этап</h3>
+            <p class="hww-step-desc" data-edit-id-template="description">Описание нового этапа</p>
+          </li>
+        </template>
       </div>
 
       <div class="hww-actions">
@@ -487,10 +500,15 @@
       <section class="section our-story-section a-reveal" id="who-we-are" aria-labelledby="our-story-title">
     <div class="our-story-content">
       <h2 class="section-title our-story-title" id="our-story-title" data-edit-id="ourLittleStory.title">о нас</h2>
-      <div class="our-story-body">
-        <p class="story-paragraph" data-edit-id="ourLittleStory.story.0">Мы находим для вас правильных специалистов и строим благоприятные рабочие коллективы.  Наша компания давно занимается нетворкингом, заточена на диалог с персоналом, мы можем проводить собеседования, а также мотивировать персонал.</p>
-        <p class="story-paragraph" data-edit-id="ourLittleStory.story.1">TimaMih Tmi. действует в интересах клиента в рамках своих полномочий. Персонал в любом бизнесе часто оставляет желать лучшего поэтому большие компании все чаще прибегают к услугам подбора персонала так как хорошая команда это 75% успеха.</p>
+      <div class="our-story-body" data-array="ourLittleStory.story">
+        <!-- array:ourLittleStory.story:start -->
+        <p class="story-paragraph" data-edit-id="ourLittleStory.story.0" data-array-item="0">Мы находим для вас правильных специалистов и строим благоприятные рабочие коллективы.  Наша компания давно занимается нетворкингом, заточена на диалог с персоналом, мы можем проводить собеседования, а также мотивировать персонал.</p>
+        <p class="story-paragraph" data-edit-id="ourLittleStory.story.1" data-array-item="1">TimaMih Tmi. действует в интересах клиента в рамках своих полномочий. Персонал в любом бизнесе часто оставляет желать лучшего поэтому большие компании все чаще прибегают к услугам подбора персонала так как хорошая команда это 75% успеха.</p>
+        <!-- array:ourLittleStory.story:end -->
       </div>
+      <template data-array-template="ourLittleStory.story">
+        <p class="story-paragraph" data-edit-id-template="">Новый абзац</p>
+      </template>
     </div>
   </section>
       <section class="section get-in-touch-section get-in-touch-grid" id="get-in-touch" aria-labelledby="get-in-touch-title">
@@ -524,11 +542,12 @@
               type="button"
               data-island="copy-contact"
               data-copy-value="+358453491091"
+              data-edit-attr="contacts.phone.value:data-copy-value"
               aria-label="или можете скопировать: +358 45 349 1091"
             >
               <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-copy"></use></svg>
             </button>
-            <p class="copy-data" data-label="Телефон">+358 45 349 1091</p>
+            <p class="copy-data" data-label="Телефон" data-edit-id="contacts.phone.display">+358 45 349 1091</p>
           </div>
           <div class="copy-contact">
             <button
@@ -536,11 +555,12 @@
               type="button"
               data-island="copy-contact"
               data-copy-value="@timamih_com"
+              data-edit-attr="contacts.telegram.value:data-copy-value"
               aria-label="или можете скопировать: @timamih_com"
             >
               <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-copy"></use></svg>
             </button>
-            <p class="copy-data" data-label="Телеграм">@timamih_com</p>
+            <p class="copy-data" data-label="Телеграм" data-edit-id="contacts.telegram.display">@timamih_com</p>
           </div>
           <div class="copy-contact">
             <button
@@ -548,11 +568,12 @@
               type="button"
               data-island="copy-contact"
               data-copy-value="358453491091"
+              data-edit-attr="contacts.whatsapp.value:data-copy-value"
               aria-label="или можете скопировать: 358453491091"
             >
               <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-copy"></use></svg>
             </button>
-            <p class="copy-data" data-label="WhatsApp">358453491091</p>
+            <p class="copy-data" data-label="WhatsApp" data-edit-id="contacts.whatsapp.display">358453491091</p>
           </div>
           <div class="copy-contact">
             <button
@@ -560,11 +581,12 @@
               type="button"
               data-island="copy-contact"
               data-copy-value="timamih_com"
+              data-edit-attr="contacts.instagram.value:data-copy-value"
               aria-label="или можете скопировать: timamih_com"
             >
               <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-copy"></use></svg>
             </button>
-            <p class="copy-data" data-label="Инстаграм">timamih_com</p>
+            <p class="copy-data" data-label="Инстаграм" data-edit-id="contacts.instagram.display">timamih_com</p>
           </div>
       </div>
     </div>

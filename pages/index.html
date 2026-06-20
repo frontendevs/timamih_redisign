@@ -188,14 +188,14 @@
       </p>
 
       <h1 class="hero-title" id="hero-title">
-        <span><strong>We</strong> will</span>
-          <span>select</span>
-          <span>an expert</span>
-          <span>for you</span>
+        <span><strong data-edit-id="hero.title.bold">We</strong><span data-edit-id="hero.title.0.rest"> will</span></span>
+          <span data-edit-id="hero.title.1">select</span>
+          <span data-edit-id="hero.title.2">an expert</span>
+          <span data-edit-id="hero.title.3">for you</span>
         <svg class="hero-underline" viewBox="0 0 358 23" fill="none" aria-hidden="true"><path d="M2.58433 17.2277C111.649 0.38611 240.277 -7.98615 349.982 10.3551C356.464 11.4388 359.261 15.0846 357.467 18.433C355.673 21.7815 353.448 24.0515 343.473 22.5036C261.944 6.70847 173.961 7.05371 89.324 12.7935C60.7553 14.7741 32.3866 17.6553 4.33961 21.4247C2.98768 21.565 0.80493 21.2963 0.165868 19.8407C-0.518641 18.2816 1.03868 17.4664 2.58433 17.2277Z"/></svg>
       </h1>
 
-      <p class="hero-desc" data-edit-id="hero.description">Creative tools for your business. 2</p>
+      <p class="hero-desc" data-edit-id="hero.description">Creative tools for your business.</p>
 
       <div class="hero-actions">
         <button
@@ -262,58 +262,40 @@
       <output class="hww-numbers" aria-live="polite" aria-atomic="true" data-js="carousel-status">1 / 5</output>
 
       <div class="hww-viewport">
-        <ul class="hww-track" role="list" data-js="carousel-track">
-          <li
-            class="hww-slide is-active"
-            role="group"
-            aria-roledescription="slide"
-            aria-label="1 / 5"
-            data-js="carousel-slide"
-          >
-            <h3 class="hww-step-title" data-edit-id="howWeWork.steps.0.title">Discussion</h3>
-            <p class="hww-step-desc" data-edit-id="howWeWork.steps.0.description">In the beginning, we must find out what kind of specialist you are missing and prioritize correctly, or you need to build a working team from scratch, for example, for your new project.</p>
+        <ul class="hww-track" role="list" data-js="carousel-track" data-array="howWeWork.steps">
+          <!-- array:howWeWork.steps:start -->
+<li class="hww-slide is-active" role="group" aria-roledescription="slide" aria-label="2 / 5" data-js="carousel-slide" data-array-item="0" aria-hidden="false">
+            <h3 class="hww-step-title" data-edit-id="howWeWork.steps.0.title">Commencing the process</h3>
+            <p class="hww-step-desc" data-edit-id="howWeWork.steps.0.description">I will conduct the interviews and choose an expert for you who will solve the problem in a certain time.</p>
           </li>
-          <li
-            class="hww-slide"
-            role="group"
-            aria-roledescription="slide"
-            aria-label="2 / 5"
-            data-js="carousel-slide"
-          >
-            <h3 class="hww-step-title" data-edit-id="howWeWork.steps.1.title">Commencing the process</h3>
-            <p class="hww-step-desc" data-edit-id="howWeWork.steps.1.description">I will conduct the interviews and choose an expert for you who will solve the problem in a certain time.</p>
+<li class="hww-slide" role="group" aria-roledescription="slide" aria-label="1 / 5" data-js="carousel-slide" data-array-item="1" aria-hidden="true">
+            <h3 class="hww-step-title" data-edit-id="howWeWork.steps.1.title">Discussion</h3>
+            <p class="hww-step-desc" data-edit-id="howWeWork.steps.1.description">In the beginning, we must find out what kind of specialist you are missing and prioritize correctly, or you need to build a working team from scratch, for example, for your new project.</p>
           </li>
-          <li
-            class="hww-slide"
-            role="group"
-            aria-roledescription="slide"
-            aria-label="3 / 5"
-            data-js="carousel-slide"
-          >
+<li class="hww-slide" role="group" aria-roledescription="slide" aria-label="3 / 5" data-js="carousel-slide" data-array-item="2" aria-hidden="true">
             <h3 class="hww-step-title" data-edit-id="howWeWork.steps.2.title">Finishing the process</h3>
             <p class="hww-step-desc" data-edit-id="howWeWork.steps.2.description">Experts will show you the intermediate stages of the work that need to be fixed early.</p>
           </li>
-          <li
-            class="hww-slide"
-            role="group"
-            aria-roledescription="slide"
-            aria-label="4 / 5"
-            data-js="carousel-slide"
-          >
-            <h3 class="hww-step-title" data-edit-id="howWeWork.steps.3.title">Promotion</h3>
-            <p class="hww-step-desc" data-edit-id="howWeWork.steps.3.description">We recommend ordering promotional services from us for the specified target audience. In addition to content production, an important aspect is advertising the media product on different internet platforms.</p>
+<li class="hww-slide" role="group" aria-roledescription="slide" aria-label="5 / 5" data-js="carousel-slide" data-array-item="3" aria-hidden="true">
+            <h3 class="hww-step-title" data-edit-id="howWeWork.steps.3.title">Feedback</h3>
+            <p class="hww-step-desc" data-edit-id="howWeWork.steps.3.description">We need feedback to improve our service. Please tell us which advertising services you would like to see on our website. What can we improve? What rules should we follow?</p>
           </li>
-          <li
-            class="hww-slide"
-            role="group"
-            aria-roledescription="slide"
-            aria-label="5 / 5"
-            data-js="carousel-slide"
-          >
-            <h3 class="hww-step-title" data-edit-id="howWeWork.steps.4.title">Feedback</h3>
-            <p class="hww-step-desc" data-edit-id="howWeWork.steps.4.description">We need feedback to improve our service. Please tell us which advertising services you would like to see on our website. What can we improve? What rules should we follow?</p>
+<li class="hww-slide" role="group" aria-roledescription="slide" aria-label="4 / 5" data-js="carousel-slide" data-array-item="4" aria-hidden="true">
+            <h3 class="hww-step-title" data-edit-id="howWeWork.steps.4.title">Promotion</h3>
+            <p class="hww-step-desc" data-edit-id="howWeWork.steps.4.description">We recommend ordering promotional services from us for the specified target audience. In addition to content production, an important aspect is advertising the media product on different internet platforms.</p>
           </li>
+<li class="hww-slide" role="group" aria-roledescription="slide" aria-label="" data-js="carousel-slide" data-array-item="5" aria-hidden="true">
+            <h3 class="hww-step-title" data-edit-id="howWeWork.steps.5.title">Some title</h3>
+            <p class="hww-step-desc" data-edit-id="howWeWork.steps.5.description">New step description</p>
+          </li>
+<!-- array:howWeWork.steps:end -->
         </ul>
+        <template data-array-template="howWeWork.steps">
+          <li class="hww-slide" role="group" aria-roledescription="slide" aria-label="" data-js="carousel-slide">
+            <h3 class="hww-step-title" data-edit-id-template="title">New step title</h3>
+            <p class="hww-step-desc" data-edit-id-template="description">New step description</p>
+          </li>
+        </template>
       </div>
 
       <div class="hww-actions">
@@ -488,10 +470,15 @@
       <section class="section our-story-section a-reveal" id="who-we-are" aria-labelledby="our-story-title">
     <div class="our-story-content">
       <h2 class="section-title our-story-title" id="our-story-title" data-edit-id="ourLittleStory.title">about us</h2>
-      <div class="our-story-body">
-        <p class="story-paragraph" data-edit-id="ourLittleStory.story.0">We find the right specialists for you and build favorable work teams. Our company has been engaged in networking for a long time, it is focused on dialogue with the staff, we can conduct interviews, as well as motivate the staff.</p>
-        <p class="story-paragraph" data-edit-id="ourLittleStory.story.1">TimaMih Tmi always acts in the customer&#x27;s interest within the scope of its authority. The personnel of any company often leaves much to be desired, so large companies rely more and more often on recruitment services, because a good team is 75% of success.</p>
+      <div class="our-story-body" data-array="ourLittleStory.story">
+        <!-- array:ourLittleStory.story:start -->
+<p class="story-paragraph" data-edit-id="ourLittleStory.story.0" data-array-item="0" contenteditable="plaintext-only" spellcheck="false">We find the right specialists for you and build favorable work teams. Our company has been engaged in networking for a long time, it is focused on dialogue with the staff, we can conduct interviews, as well as motivate the staff.</p>
+<p class="story-paragraph" data-edit-id="ourLittleStory.story.1" data-array-item="1" contenteditable="plaintext-only" spellcheck="false">TimaMih Tmi always acts in the customer's interest within the scope of its authority. The personnel of any company often leaves much to be desired, so large companies rely more and more often on recruitment services, because a good team is 75% of success.</p>
+<!-- array:ourLittleStory.story:end -->
       </div>
+      <template data-array-template="ourLittleStory.story">
+        <p class="story-paragraph" data-edit-id-template="">New paragraph text</p>
+      </template>
     </div>
   </section>
       <section class="section get-in-touch-section get-in-touch-grid" id="get-in-touch" aria-labelledby="get-in-touch-title">
@@ -525,11 +512,12 @@
               type="button"
               data-island="copy-contact"
               data-copy-value="+358453491091"
+              data-edit-attr="contacts.phone.value:data-copy-value"
               aria-label="or you can copy: +358 45 349 1091"
             >
               <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-copy"></use></svg>
             </button>
-            <p class="copy-data" data-label="Phone">+358 45 349 1091</p>
+            <p class="copy-data" data-label="Phone" data-edit-id="contacts.phone.display">+358 45 349 1091</p>
           </div>
           <div class="copy-contact">
             <button
@@ -537,11 +525,12 @@
               type="button"
               data-island="copy-contact"
               data-copy-value="@timamih_com"
+              data-edit-attr="contacts.telegram.value:data-copy-value"
               aria-label="or you can copy: @timamih_com"
             >
               <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-copy"></use></svg>
             </button>
-            <p class="copy-data" data-label="Telegram">@timamih_com</p>
+            <p class="copy-data" data-label="Telegram" data-edit-id="contacts.telegram.display">@timamih_com</p>
           </div>
           <div class="copy-contact">
             <button
@@ -549,11 +538,12 @@
               type="button"
               data-island="copy-contact"
               data-copy-value="358453491091"
+              data-edit-attr="contacts.whatsapp.value:data-copy-value"
               aria-label="or you can copy: 358453491091"
             >
               <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-copy"></use></svg>
             </button>
-            <p class="copy-data" data-label="WhatsApp">358453491091</p>
+            <p class="copy-data" data-label="WhatsApp" data-edit-id="contacts.whatsapp.display">358453491091</p>
           </div>
           <div class="copy-contact">
             <button
@@ -561,11 +551,12 @@
               type="button"
               data-island="copy-contact"
               data-copy-value="timamih_com"
+              data-edit-attr="contacts.instagram.value:data-copy-value"
               aria-label="or you can copy: timamih_com"
             >
               <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-copy"></use></svg>
             </button>
-            <p class="copy-data" data-label="Instagram">timamih_com</p>
+            <p class="copy-data" data-label="Instagram" data-edit-id="contacts.instagram.display">timamih_com</p>
           </div>
       </div>
     </div>

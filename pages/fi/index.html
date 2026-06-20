@@ -188,9 +188,9 @@
       </p>
 
       <h1 class="hero-title" id="hero-title">
-        <span><strong>Meiltä</strong> saa</span>
-          <span>luovia</span>
-          <span>ratkaisuja</span>
+        <span><strong data-edit-id="hero.title.bold">Meiltä</strong><span data-edit-id="hero.title.0.rest"> saa</span></span>
+          <span data-edit-id="hero.title.1">luovia</span>
+          <span data-edit-id="hero.title.2">ratkaisuja</span>
         <svg class="hero-underline" viewBox="0 0 358 23" fill="none" aria-hidden="true"><path d="M2.58433 17.2277C111.649 0.38611 240.277 -7.98615 349.982 10.3551C356.464 11.4388 359.261 15.0846 357.467 18.433C355.673 21.7815 353.448 24.0515 343.473 22.5036C261.944 6.70847 173.961 7.05371 89.324 12.7935C60.7553 14.7741 32.3866 17.6553 4.33961 21.4247C2.98768 21.565 0.80493 21.2963 0.165868 19.8407C-0.518641 18.2816 1.03868 17.4664 2.58433 17.2277Z"/></svg>
       </h1>
 
@@ -261,13 +261,15 @@
       <output class="hww-numbers" aria-live="polite" aria-atomic="true" data-js="carousel-status">1 / 5</output>
 
       <div class="hww-viewport">
-        <ul class="hww-track" role="list" data-js="carousel-track">
+        <ul class="hww-track" role="list" data-js="carousel-track" data-array="howWeWork.steps">
+          <!-- array:howWeWork.steps:start -->
           <li
             class="hww-slide is-active"
             role="group"
             aria-roledescription="slide"
             aria-label="1 / 5"
             data-js="carousel-slide"
+            data-array-item="0"
           >
             <h3 class="hww-step-title" data-edit-id="howWeWork.steps.0.title">Ideointikeskustelut</h3>
             <p class="hww-step-desc" data-edit-id="howWeWork.steps.0.description">Alussa meidän kannattaa selvitettävä, millaista asiantuntijaa sinulta puuttuu ja priorisoitava oikein, tai sinun on rakennettava toimiva tiimi alusta alkaen esimerkiksi uuteen projektiisi.</p>
@@ -278,6 +280,7 @@
             aria-roledescription="slide"
             aria-label="2 / 5"
             data-js="carousel-slide"
+            data-array-item="1"
           >
             <h3 class="hww-step-title" data-edit-id="howWeWork.steps.1.title">Alkuun pääseminen</h3>
             <p class="hww-step-desc" data-edit-id="howWeWork.steps.1.description">Suoritan haastattelut ja valitsen sinulle asiantuntijan, joka ratkaisee ongelman tietyssä ajassa. Nopeuttaa ja helpottaa prosessia valitsemalla jokin alla ehdotetuista luokista.</p>
@@ -288,6 +291,7 @@
             aria-roledescription="slide"
             aria-label="3 / 5"
             data-js="carousel-slide"
+            data-array-item="2"
           >
             <h3 class="hww-step-title" data-edit-id="howWeWork.steps.2.title">Työprosessi</h3>
             <p class="hww-step-desc" data-edit-id="howWeWork.steps.2.description">Asiantuntijat näyttävät sinulle työn välivaiheet, jotka on korjattava varhaisessa vaiheessa.</p>
@@ -298,6 +302,7 @@
             aria-roledescription="slide"
             aria-label="4 / 5"
             data-js="carousel-slide"
+            data-array-item="3"
           >
             <h3 class="hww-step-title" data-edit-id="howWeWork.steps.3.title">Promootio</h3>
             <p class="hww-step-desc" data-edit-id="howWeWork.steps.3.description">Suosittelemme tilaamaan meiltä mainostuotteita kohdeyleisön saavuttamiseksi. Sisällöntuotannon lisäksi promootion tärkeä osa on mediatuotteen mainostaminen eri verkkoalustoilla.</p>
@@ -308,11 +313,19 @@
             aria-roledescription="slide"
             aria-label="5 / 5"
             data-js="carousel-slide"
+            data-array-item="4"
           >
             <h3 class="hww-step-title" data-edit-id="howWeWork.steps.4.title">Palaute</h3>
             <p class="hww-step-desc" data-edit-id="howWeWork.steps.4.description">Tarvitsemme palautetta palvelumme parantamiseksi. Mitä voimme parantaa? Mitä sääntöjä meidän tulee noudattaa?</p>
           </li>
+          <!-- array:howWeWork.steps:end -->
         </ul>
+        <template data-array-template="howWeWork.steps">
+          <li class="hww-slide" role="group" aria-roledescription="slide" aria-label="" data-js="carousel-slide">
+            <h3 class="hww-step-title" data-edit-id-template="title">Uusi vaihe</h3>
+            <p class="hww-step-desc" data-edit-id-template="description">Uuden vaiheen kuvaus</p>
+          </li>
+        </template>
       </div>
 
       <div class="hww-actions">
@@ -487,10 +500,15 @@
       <section class="section our-story-section a-reveal" id="who-we-are" aria-labelledby="our-story-title">
     <div class="our-story-content">
       <h2 class="section-title our-story-title" id="our-story-title" data-edit-id="ourLittleStory.title">Meistä</h2>
-      <div class="our-story-body">
-        <p class="story-paragraph" data-edit-id="ourLittleStory.story.0">Löydämme sinulle sopivat asiantuntijat ja rakennamme suotuisat työryhmät. Yrityksemme on verkostoitunut pitkään, se on keskittynyt vuoropuheluun henkilöstön kanssa, voimme tehdä haastatteluja sekä motivoida henkilökuntaa.</p>
-        <p class="story-paragraph" data-edit-id="ourLittleStory.story.1">Minkä tahansa yrityksen henkilöstö jättää usein toivomisen varaa, joten suuret yritykset turvautuvat yhä useammin rekrytointipalveluihin, koska hyvä tiimi on 75% menestyksestä.</p>
+      <div class="our-story-body" data-array="ourLittleStory.story">
+        <!-- array:ourLittleStory.story:start -->
+        <p class="story-paragraph" data-edit-id="ourLittleStory.story.0" data-array-item="0">Löydämme sinulle sopivat asiantuntijat ja rakennamme suotuisat työryhmät. Yrityksemme on verkostoitunut pitkään, se on keskittynyt vuoropuheluun henkilöstön kanssa, voimme tehdä haastatteluja sekä motivoida henkilökuntaa.</p>
+        <p class="story-paragraph" data-edit-id="ourLittleStory.story.1" data-array-item="1">Minkä tahansa yrityksen henkilöstö jättää usein toivomisen varaa, joten suuret yritykset turvautuvat yhä useammin rekrytointipalveluihin, koska hyvä tiimi on 75% menestyksestä.</p>
+        <!-- array:ourLittleStory.story:end -->
       </div>
+      <template data-array-template="ourLittleStory.story">
+        <p class="story-paragraph" data-edit-id-template="">Uusi kappale</p>
+      </template>
     </div>
   </section>
       <section class="section get-in-touch-section get-in-touch-grid" id="get-in-touch" aria-labelledby="get-in-touch-title">
@@ -524,11 +542,12 @@
               type="button"
               data-island="copy-contact"
               data-copy-value="+358453491091"
+              data-edit-attr="contacts.phone.value:data-copy-value"
               aria-label="Kopioi yhteystietojamme täältä: +358 45 349 1091"
             >
               <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-copy"></use></svg>
             </button>
-            <p class="copy-data" data-label="Puhelin">+358 45 349 1091</p>
+            <p class="copy-data" data-label="Puhelin" data-edit-id="contacts.phone.display">+358 45 349 1091</p>
           </div>
           <div class="copy-contact">
             <button
@@ -536,11 +555,12 @@
               type="button"
               data-island="copy-contact"
               data-copy-value="@timamih_com"
+              data-edit-attr="contacts.telegram.value:data-copy-value"
               aria-label="Kopioi yhteystietojamme täältä: @timamih_com"
             >
               <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-copy"></use></svg>
             </button>
-            <p class="copy-data" data-label="Telegram">@timamih_com</p>
+            <p class="copy-data" data-label="Telegram" data-edit-id="contacts.telegram.display">@timamih_com</p>
           </div>
           <div class="copy-contact">
             <button
@@ -548,11 +568,12 @@
               type="button"
               data-island="copy-contact"
               data-copy-value="358453491091"
+              data-edit-attr="contacts.whatsapp.value:data-copy-value"
               aria-label="Kopioi yhteystietojamme täältä: 358453491091"
             >
               <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-copy"></use></svg>
             </button>
-            <p class="copy-data" data-label="WhatsApp">358453491091</p>
+            <p class="copy-data" data-label="WhatsApp" data-edit-id="contacts.whatsapp.display">358453491091</p>
           </div>
           <div class="copy-contact">
             <button
@@ -560,11 +581,12 @@
               type="button"
               data-island="copy-contact"
               data-copy-value="timamih_com"
+              data-edit-attr="contacts.instagram.value:data-copy-value"
               aria-label="Kopioi yhteystietojamme täältä: timamih_com"
             >
               <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-copy"></use></svg>
             </button>
-            <p class="copy-data" data-label="Instagram">timamih_com</p>
+            <p class="copy-data" data-label="Instagram" data-edit-id="contacts.instagram.display">timamih_com</p>
           </div>
       </div>
     </div>

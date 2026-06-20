@@ -167,6 +167,7 @@
 	"ignorePatterns": [
 		"node_modules",
 		"dist",
+		"**/*.vue",
 		"coverage",
 		"vendor",
 		"public",

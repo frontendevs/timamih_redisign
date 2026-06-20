@@ -33,10 +33,10 @@ body {
 	outline-offset: 2px;
 }
 
-label:has(input:focus-visible) {
+/* label:has(input:focus-visible) {
 	outline: 1.5px solid var(--color-focus);
 	outline-offset: 2px;
-}
+} */
 
 /* ── Hidden ─────────────────────────────────────────────────── */
 :is([id], [class])[hidden] {
