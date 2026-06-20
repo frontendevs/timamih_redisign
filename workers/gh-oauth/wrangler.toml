@@ -1,0 +1,10 @@
+name = "timamih-gh-oauth"
+main = "src/index.ts"
+compatibility_date = "2025-06-01"
+
+[vars]
+EDITOR_ORIGIN = "https://timamih.com"
+
+# Secrets — set via CLI before deploying:
+#   wrangler secret put GITHUB_CLIENT_ID
+#   wrangler secret put GITHUB_CLIENT_SECRET

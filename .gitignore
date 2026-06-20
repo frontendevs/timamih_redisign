@@ -33,6 +33,7 @@ bundle-stats.html
 .env
 .env.*
 !.env.example
+.dev.vars
 .env.local
 .env.development
 .env.production

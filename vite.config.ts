@@ -2,6 +2,7 @@ import { cpSync, existsSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
+import vue from "@vitejs/plugin-vue";
 import { defineConfig } from "vite";
 
 // ESM context — __dirname unavailable. Use import.meta.url instead.
@@ -56,10 +57,14 @@ export default defineConfig({
 	// HTML root: Vite serves and resolves assets relative to this directory.
 	root: r("pages"),
 
+	// Load .env from the project root, not from root ("pages/").
+	envDir: __dirname,
+
 	// Static assets copied as-is to dist/ (favicons, robots.txt, etc.).
 	publicDir: r("public"),
 
 	plugins: [
+		vue(),
 		{
 			// Some image references may live in data-* attributes or runtime state,
 			// so Vite can't detect them statically. Copy the image tree post-build.
